@@ -15,28 +15,28 @@ interface CarouselImage {
 const carouselImages: CarouselImage[] = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1920&q=80",
+    src: "/assets/images/stage.jpg",
     alt: "Modern workspace",
-    title: "Welcome to ThematicQ",
-    subtitle: "Innovation at its finest",
+    title: "Bringing Expert Together",
+    subtitle: "",
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80",
+    src: "/assets/images/event.jpg",
     alt: "Business growth",
-    title: "Transform Your Business",
-    subtitle: "Experience the future today",
+    title: "CONNECT, INSPIRE - INNOVATE",
+    subtitle: "",
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1920&q=80",
+    src: "/assets/images/event2.jpg",
     alt: "Team collaboration",
-    title: "Collaborate & Succeed",
-    subtitle: "Building tomorrow together",
+    title: "Turning imagination into experiences",
+    subtitle: "that move hearts.",
   },
 ];
 
-const AUTO_SLIDE_INTERVAL = 5000; // 5 seconds
+const AUTO_SLIDE_INTERVAL = 3000; // 5 seconds
 
 export default function HeroCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
