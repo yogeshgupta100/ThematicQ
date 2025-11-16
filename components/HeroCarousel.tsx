@@ -1,7 +1,8 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 interface CarouselImage {
   id: number;
@@ -42,33 +43,50 @@ export default function HeroCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState<"left" | "right">("right");
   const [isAnimating, setIsAnimating] = useState(false);
+  const [isTextRefreshing, setIsTextRefreshing] = useState(false);
+  const heroRef = useRef<HTMLDivElement>(null);
+  const { ref: heroAnimationRef, isVisible: heroVisible } = useScrollAnimation({
+    threshold: 0.1,
+  });
 
   const goToNext = useCallback(() => {
     if (isAnimating) return;
     setDirection("right");
     setIsAnimating(true);
+    setIsTextRefreshing(true);
     setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselImages.length);
-    setTimeout(() => setIsAnimating(false), 1000);
+    setTimeout(() => {
+      setIsAnimating(false);
+      setTimeout(() => setIsTextRefreshing(false), 100);
+    }, 1000);
   }, [isAnimating]);
 
   const goToPrevious = useCallback(() => {
     if (isAnimating) return;
     setDirection("left");
     setIsAnimating(true);
+    setIsTextRefreshing(true);
     setCurrentIndex(
       (prevIndex) =>
         (prevIndex - 1 + carouselImages.length) % carouselImages.length
     );
-    setTimeout(() => setIsAnimating(false), 1000);
+    setTimeout(() => {
+      setIsAnimating(false);
+      setTimeout(() => setIsTextRefreshing(false), 100);
+    }, 1000);
   }, [isAnimating]);
 
   const goToSlide = useCallback(
     (index: number) => {
       if (index !== currentIndex && !isAnimating) {
         setIsAnimating(true);
+        setIsTextRefreshing(true);
         setDirection(index > currentIndex ? "right" : "left");
         setCurrentIndex(index);
-        setTimeout(() => setIsAnimating(false), 1000);
+        setTimeout(() => {
+          setIsAnimating(false);
+          setTimeout(() => setIsTextRefreshing(false), 100);
+        }, 1000);
       }
     },
     [currentIndex, isAnimating]
@@ -98,9 +116,16 @@ export default function HeroCarousel() {
   };
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div ref={heroRef} className="relative w-full h-screen overflow-hidden">
       {/* Carousel Images */}
-      <div className="relative w-full h-full">
+      <div
+        ref={heroAnimationRef}
+        className={`relative w-full h-full transition-all duration-1000 ease-out ${
+          heroVisible
+            ? "translate-y-0 opacity-100 scale-100"
+            : "translate-y-8 opacity-0 scale-95"
+        }`}
+      >
         {carouselImages.map((image, index) => {
           const isActive = index === currentIndex;
           const slideClass = getSlidePosition(index);
@@ -123,27 +148,37 @@ export default function HeroCarousel() {
               {/* Overlay for better text readability - similar to campepicglobal.com */}
               <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60" />
 
-              {/* Content Overlay with slide animation - text changes with each slide */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div
-                  className={`text-center text-white px-4 z-10 max-w-4xl mx-auto transition-all duration-1000 ease-in-out ${
-                    isActive
-                      ? "opacity-100 translate-y-0 scale-100"
-                      : "opacity-0 translate-y-8 scale-95"
-                  }`}
-                >
-                  {image.title && (
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 transform transition-all duration-1000">
-                      {image.title}
-                    </h1>
-                  )}
-                  {image.subtitle && (
-                    <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light transform transition-all duration-1000 delay-150">
-                      {image.subtitle}
-                    </p>
-                  )}
+              {/* Content Overlay with refresh animation - text changes with each slide */}
+              {isActive && (
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div
+                    className={`text-center text-white px-4 z-10 max-w-4xl mx-auto transition-all duration-1000 ease-out ${
+                      isTextRefreshing
+                        ? "opacity-0 translate-y-8 scale-95"
+                        : "opacity-100 translate-y-0 scale-100"
+                    }`}
+                    style={{
+                      transitionDelay: isTextRefreshing ? "0ms" : "200ms",
+                    }}
+                  >
+                    {image.title && (
+                      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6">
+                        {image.title}
+                      </h1>
+                    )}
+                    {image.subtitle && (
+                      <p
+                        className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light transition-all duration-1000 ease-out"
+                        style={{
+                          transitionDelay: isTextRefreshing ? "0ms" : "400ms",
+                        }}
+                      >
+                        {image.subtitle}
+                      </p>
+                    )}
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           );
         })}
