@@ -31,23 +31,59 @@ export default function ContactForm() {
     setIsSubmitting(true);
     setSubmitStatus({ type: null, message: "" });
 
-    // Simulate form submission (replace with actual API call)
-    try {
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      setSubmitStatus({
-        type: "success",
-        message: "Thank you! Your message has been sent successfully.",
-      });
-      setFormData({
-        name: "",
-        email: "",
-        contactNumber: "",
-        subject: "",
-      });
-    } catch (error) {
+    // Get access key from environment variable
+    const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || "";
+
+    if (!accessKey) {
       setSubmitStatus({
         type: "error",
-        message: "Something went wrong. Please try again later.",
+        message:
+          "Form service is not configured. Please add NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY to your environment variables.",
+      });
+      setIsSubmitting(false);
+      return;
+    }
+
+    try {
+      // Submit to Web3Forms API
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: accessKey,
+          name: formData.name,
+          email: formData.email,
+          contact_number: formData.contactNumber,
+          subject: formData.subject,
+          from_name: "ThematicQ Contact Form",
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSubmitStatus({
+          type: "success",
+          message: "Thank you! Your message has been sent successfully.",
+        });
+        setFormData({
+          name: "",
+          email: "",
+          contactNumber: "",
+          subject: "",
+        });
+      } else {
+        throw new Error(result.message || "Failed to send message");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setSubmitStatus({
+        type: "error",
+        message:
+          "Something went wrong. Please try again later or contact us directly.",
       });
     } finally {
       setIsSubmitting(false);
