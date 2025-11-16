@@ -1,0 +1,81 @@
+"use client";
+
+import Image from "next/image";
+import AnimatedSection from "../AnimatedSection";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+
+const showcaseItems = [
+  {
+    src: "https://images.unsplash.com/photo-1519162808019-7de1683fa2ad?w=800&q=80",
+    alt: "College event with traditional attire",
+    label: "College Event & Stalls",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80",
+    alt: "Floral decoration setup",
+    label: "Floral Decoration",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&q=80",
+    alt: "Masquerade mask with feathers",
+    label: "Festival Events",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&q=80",
+    alt: "Serene landscape scene",
+    label: "Wedding Theme Concept",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80",
+    alt: "Modern conference room",
+    label: "Conference Theme",
+  },
+];
+
+function ShowcaseCard({
+  item,
+  index,
+}: {
+  item: (typeof showcaseItems)[0];
+  index: number;
+}) {
+  const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 });
+
+  return (
+    <div
+      ref={ref}
+      className={`relative group ${
+        isVisible ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
+      }`}
+      style={{ transitionDelay: `${index * 100}ms` }}
+    >
+      <div className="relative aspect-square rounded-lg overflow-hidden border border-gray-800 hover:border-teal-500/50 transition-all duration-500 cursor-pointer">
+        <Image
+          src={item.src}
+          alt={item.alt}
+          fill
+          className="object-cover transition-transform duration-700 group-hover:scale-110"
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-teal-500/20 via-transparent to-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
+      <p className="text-white text-center mt-4 text-lg font-medium">
+        {item.label}
+      </p>
+    </div>
+  );
+}
+
+export default function ServicesShowcase() {
+  return (
+    <section className="bg-black text-white py-16 md:py-24 px-4 md:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          {showcaseItems.map((item, index) => (
+            <ShowcaseCard key={index} item={item} index={index} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
