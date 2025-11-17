@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
 
 interface NavbarProps {
@@ -16,7 +16,7 @@ export default function Navbar({ transparent }: NavbarProps) {
   const [isServicesHovered, setIsServicesHovered] = useState(false);
   const [hoverTimeout, setHoverTimeout] = useState<NodeJS.Timeout | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
+  const router = useRouter();
   // Detect scroll position to change navbar background
   useEffect(() => {
     if (!isHomePage) {
@@ -94,7 +94,10 @@ export default function Navbar({ transparent }: NavbarProps) {
           <Link
             href="/"
             className="flex items-center gap-2 sm:gap-3 h-full md:gap-4 group z-50"
-            onClick={() => setIsMobileMenuOpen(false)}
+            onClick={() => {
+              setIsMobileMenuOpen(false);
+              router.push("/");
+            }}
           >
             <div className="relative h-full w-auto min-w-[100px] sm:min-w-[120px] md:min-w-[150px] mt-[12px] sm:mt-[16px]">
               <Image
@@ -213,7 +216,7 @@ export default function Navbar({ transparent }: NavbarProps) {
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
                                     <div className="absolute inset-0 flex flex-col justify-end p-4 md:p-6">
-                                      <h3 className="text-lg md:text-xl font-bold text-white mb-2 group-hover:text-teal-400 transition-colors">
+                                      <h3 className="text-sm md:text-base font-medium text-white mb-2 group-hover:text-teal-400 transition-colors">
                                         {item.title}
                                       </h3>
                                       <p className="text-sm md:text-base text-gray-300 leading-relaxed">
@@ -284,7 +287,7 @@ export default function Navbar({ transparent }: NavbarProps) {
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
                                 <div className="absolute inset-0 flex flex-col justify-end p-4">
-                                  <h3 className="text-base font-bold text-white mb-1 group-hover:text-teal-400 transition-colors">
+                                  <h3 className="text-xs font-medium text-white mb-1 group-hover:text-teal-400 transition-colors">
                                     {item.title}
                                   </h3>
                                   <p className="text-xs text-gray-300">

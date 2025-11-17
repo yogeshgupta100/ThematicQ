@@ -34,7 +34,7 @@ export default function ServicesSection() {
 
       <div className="max-w-7xl mx-auto">
         <AnimatedSection direction="fade" delay={0}>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-center text-white">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium mb-6 text-center text-white">
             Our Services/Expertise
           </h2>
           <p className="text-lg md:text-xl text-gray-300 text-center max-w-4xl mx-auto mb-12 leading-relaxed">
@@ -56,7 +56,7 @@ export default function ServicesSection() {
                 delay={index * 100}
               >
                 <div className="border-l-4 border-teal-500 pl-6 group hover:border-teal-400 transition-colors duration-300">
-                  <h3 className="text-2xl md:text-3xl font-bold mb-3 text-teal-400 group-hover:text-teal-300 transition-colors">
+                  <h3 className="text-lg md:text-xl font-medium mb-3 text-teal-400 group-hover:text-teal-300 transition-colors">
                     {service.title}
                   </h3>
                   <p className="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors">

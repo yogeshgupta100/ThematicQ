@@ -7,7 +7,7 @@ export default function CoreValues() {
     <section className="bg-black text-white py-16 md:py-24 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
         <AnimatedSection direction="fade" delay={0}>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-white">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium mb-8 text-white">
             Our core values are simple: creativity, precision, and passion.
           </h2>
           <div className="space-y-6 text-lg md:text-xl text-gray-300 leading-relaxed max-w-4xl">

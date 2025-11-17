@@ -46,7 +46,7 @@ function QFactorItem({ factor, index }: QFactorItemProps) {
           </span>
         </div>
         <div className="flex-1">
-          <h3 className="text-2xl md:text-3xl font-bold mb-3 text-white">
+          <h3 className="text-lg md:text-xl font-medium mb-3 text-white">
             {factor.title}
           </h3>
           <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
@@ -70,7 +70,7 @@ export default function Philosophy() {
             ref={parallaxRef}
             style={{ transform: `translateY(${offset}px)` }}
           >
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-12 text-white">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium mb-12 text-white">
               Our Philosophy - The &apos;Q&apos; Factor
             </h2>
           </div>

@@ -152,7 +152,7 @@ export default function PortfolioSection() {
 
       <div className="max-w-7xl mx-auto">
         <AnimatedSection direction="fade" delay={0}>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-center text-white">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium mb-4 text-center text-white">
             OUR PORTFOLIO
           </h2>
           <p className="text-xl md:text-2xl text-teal-400 text-center mb-4 font-semibold">

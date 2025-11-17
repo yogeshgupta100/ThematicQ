@@ -94,7 +94,7 @@ export default function ContactForm() {
     <section className="bg-black text-white py-16 md:py-24 px-4 md:px-8">
       <div className="max-w-3xl mx-auto">
         <AnimatedSection direction="fade" delay={0}>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-center text-white">
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-medium mb-8 text-center text-white">
             Get In Touch
           </h2>
         </AnimatedSection>

@@ -24,7 +24,7 @@ export default function AboutHeader() {
         >
           <h1
             ref={titleRef}
-            className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 text-white text-center"
+            className="text-3xl md:text-4xl lg:text-5xl font-medium mb-4 text-white text-center"
           >
             About Us
           </h1>

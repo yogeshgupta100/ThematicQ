@@ -15,7 +15,7 @@ export default function TheQSection() {
         {/* Hero Text */}
         <AnimatedSection direction="fade" delay={0}>
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-medium mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
               At ThematicQ, we are the event storytellers.
             </h1>
             <p className="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto mb-6 leading-relaxed">
@@ -37,7 +37,7 @@ export default function TheQSection() {
           {/* Q for Question */}
           <AnimatedSection direction="up" delay={100}>
             <div className="text-center group">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white">
+              <h2 className="text-lg md:text-xl font-medium mb-4 text-white">
                 Q for question.
               </h2>
               <p className="text-gray-300 leading-relaxed">
@@ -51,7 +51,7 @@ export default function TheQSection() {
           {/* Q for Quality */}
           <AnimatedSection direction="up" delay={200}>
             <div className="text-center group">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white">
+              <h2 className="text-lg md:text-xl font-medium mb-4 text-white">
                 Q for Quality.
               </h2>
               <p className="text-gray-300 leading-relaxed mb-4">
@@ -69,7 +69,7 @@ export default function TheQSection() {
           {/* Q for Quotient */}
           <AnimatedSection direction="up" delay={300}>
             <div className="text-center group">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white">
+              <h2 className="text-lg md:text-xl font-medium mb-4 text-white">
                 Q for Quotient.
               </h2>
               <p className="text-gray-300 leading-relaxed">

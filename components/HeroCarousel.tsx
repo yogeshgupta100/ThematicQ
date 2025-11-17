@@ -162,7 +162,7 @@ export default function HeroCarousel() {
                     }}
                   >
                     {image.title && (
-                      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6">
+                      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-4 md:mb-6">
                         {image.title}
                       </h1>
                     )}

@@ -19,7 +19,7 @@ export default function ThemeEventHeader() {
               : "translate-y-8 opacity-0 scale-95"
           }`}
         >
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 text-white text-center">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium mb-4 text-white text-center">
             ThematicQ - Designing Events Around Your Narrative
           </h1>
         </div>

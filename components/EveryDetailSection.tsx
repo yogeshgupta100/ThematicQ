@@ -14,7 +14,7 @@ export default function EveryDetailSection() {
           {/* Text Content */}
           <AnimatedSection direction="right" delay={0}>
             <div>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium mb-6 text-white">
                 Every Details Counts
               </h2>
               <p className="text-lg md:text-xl text-gray-300 leading-relaxed">

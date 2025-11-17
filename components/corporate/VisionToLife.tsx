@@ -40,7 +40,7 @@ export default function VisionToLife() {
     <section className="bg-black text-white py-16 md:py-24 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
         <AnimatedSection direction="fade" delay={0}>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-white">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium mb-4 text-white">
             Bringing Your Vision To Life
           </h2>
           <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-4xl">
@@ -58,7 +58,7 @@ export default function VisionToLife() {
                   </span>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl md:text-3xl font-bold mb-3 text-white">
+                  <h3 className="text-lg md:text-xl font-medium mb-3 text-white">
                     {step.title}
                   </h3>
                   <p className="text-lg md:text-xl text-gray-300 leading-relaxed">

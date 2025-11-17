@@ -41,7 +41,7 @@ export default function WhyChooseSection() {
 
       <div className="max-w-7xl mx-auto relative z-10">
         <AnimatedSection direction="fade" delay={0}>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-center text-white">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium mb-6 text-center text-white">
             Why Choose ThematicQ?
           </h2>
           <p className="text-lg md:text-xl text-gray-300 text-center max-w-4xl mx-auto mb-12 leading-relaxed">
@@ -58,7 +58,7 @@ export default function WhyChooseSection() {
           {features.map((feature, index) => (
             <AnimatedSection key={index} direction="up" delay={index * 100}>
               <div className="bg-gray-900 p-6 md:p-8 rounded-lg border border-gray-800 hover:border-teal-500 transition-all duration-300 group hover:shadow-lg hover:shadow-teal-500/20 hover:-translate-y-2">
-                <h3 className="text-xl md:text-2xl font-bold mb-3 text-teal-400 group-hover:text-teal-300 transition-colors">
+                <h3 className="text-base md:text-lg font-medium mb-3 text-teal-400 group-hover:text-teal-300 transition-colors">
                   {feature.title}
                 </h3>
                 <p className="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors">
