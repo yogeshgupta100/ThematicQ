@@ -105,7 +105,7 @@ export default function PortfolioSection() {
     },
     {
       id: 6,
-      src: "/assets/static/Images/Homepage/Portfolio/Wedding/img1.jpg",
+      src: "/assets/static/Images/Homepage/Portfolio/Wedding/img1.JPG",
       alt: "Production Stage",
       rowSpan: 1,
       colSpan: 1,
