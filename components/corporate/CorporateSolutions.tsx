@@ -10,9 +10,9 @@ const solutions = [
     description:
       "Want to get people talking about your brand? Start with an impactful launch. We conceptualise and organise events that get people talking about your vision, attract your target market, and secure the ideal attendees.",
     images: [
-      "/assets/static/images/production/1a1bdc739c2b60944c50f3749ec2dec6.jpg",
-      "/assets/static/images/production/3875c1caed367201d23bd55760187b57.jpg",
-      "/assets/static/images/production/IMG-20250227-WA0009.jpg",
+      "/assets/static/Images/Production/1a1bdc739c2b60944c50f3749ec2dec6.jpg",
+      "/assets/static/Images/Production/3875c1caed367201d23bd55760187b57.jpg",
+      "/assets/static/Images/Production/IMG-20250227-WA0009.jpg",
     ],
   },
   {
@@ -21,9 +21,9 @@ const solutions = [
     description:
       "Great businesses have great teams, and that's what we aim to achieve with our team-building activities. These events are interactive, fun, and centred on achieving the desired outcomes.",
     images: [
-      "/assets/static/images/production/IMG-20250227-WA0010.jpg",
-      "/assets/static/images/production/IMG-20250228-WA0007.jpg",
-      "/assets/static/images/production/IMG-20250228-WA0008.jpg",
+      "/assets/static/Images/Production/IMG-20250227-WA0010.jpg",
+      "/assets/static/Images/Production/IMG-20250228-WA0007.jpg",
+      "/assets/static/Images/Production/IMG-20250228-WA0008.jpg",
     ],
   },
   {
@@ -32,9 +32,9 @@ const solutions = [
     description:
       "Celebrate the people that you work with and their families. We foster a culture through fun events centred around our clients, their employees, and families, around games and activities for entertainment and engagement, and deeper bonding for integration.",
     images: [
-      "/assets/static/images/production/IMG-20250228-WA0010.jpg",
-      "/assets/static/images/production/IMG-20250706-WA0003.jpg",
-      "/assets/static/images/production/IMG-20250815-WA0001.jpg",
+      "/assets/static/Images/Production/IMG-20250228-WA0010.jpg",
+      "/assets/static/Images/Production/IMG-20250706-WA0003.jpg",
+      "/assets/static/Images/Production/IMG-20250815-WA0001.jpg",
     ],
   },
   {
@@ -43,9 +43,9 @@ const solutions = [
     description:
       "Milestones and successful moments deserve to be celebrated. Elegant award nights and exciting stage performances can achieve just that. We highlight your company's culture, the journey it took to get there, and everything it has accomplished.",
     images: [
-      "/assets/static/images/production/IMG-20250815-WA0002.jpg",
-      "/assets/static/images/production/IMG-20250903-WA0027.jpg",
-      "/assets/static/images/production/IMG-20250903-WA0028.jpg",
+      "/assets/static/Images/Production/IMG-20250815-WA0002.jpg",
+      "/assets/static/Images/Production/IMG-20250903-WA0027.jpg",
+      "/assets/static/Images/Production/IMG-20250903-WA0028.jpg",
     ],
   },
   {
@@ -54,9 +54,9 @@ const solutions = [
     description:
       "Whether it is a small meeting or a large conference, we handle everything. Venue setup and guest coordination of audio-visual equipment, decor, and lighting.",
     images: [
-      "/assets/static/images/Corporate/705ab92ffabc79e74d5b382e0028f284.jpg",
-      "/assets/static/images/Corporate/dafe63eaf932e3224186eb7d8dcc0755.jpg",
-      "/assets/static/images/Corporate/de2afe48de08fe2d54470543f5bb253a.jpg",
+      "/assets/static/Images/Corporate/705ab92ffabc79e74d5b382e0028f284.jpg",
+      "/assets/static/Images/Corporate/dafe63eaf932e3224186eb7d8dcc0755.jpg",
+      "/assets/static/Images/Corporate/de2afe48de08fe2d54470543f5bb253a.jpg",
     ],
   },
   {
@@ -65,9 +65,9 @@ const solutions = [
     description:
       "Recognition events should celebrate excellence, and we do just that. We design prestigious ceremonies that celebrate the highly desired and inspire the rest to strive for success.",
     images: [
-      "/assets/static/images/Corporate/Final - 8/44169568113dacf412b9a3771fc6e0fc.jpg",
-      "/assets/static/images/Corporate/Final - 8/5880534ff1d0bdfcf718af688c3d05e3.jpg",
-      "/assets/static/images/Corporate/Final - 8/6b906d41af324b9e622ea9d025119894.jpg",
+      "/assets/static/Images/Corporate/Final - 8/44169568113dacf412b9a3771fc6e0fc.jpg",
+      "/assets/static/Images/Corporate/Final - 8/5880534ff1d0bdfcf718af688c3d05e3.jpg",
+      "/assets/static/Images/Corporate/Final - 8/6b906d41af324b9e622ea9d025119894.jpg",
     ],
   },
   {
@@ -76,9 +76,9 @@ const solutions = [
     description:
       "Meaningful gifts make strong brand connections. We build distinctive, branded gifts that make a statement -from sophisticated gift baskets to imaginative promotional products.",
     images: [
-      "/assets/static/images/Corporate/Final - 8/ed0f1c26d97bae9f12e55b171c82b306.jpg",
-      "/assets/static/images/Corporate/Final - 8/44169568113dacf412b9a3771fc6e0fc.jpg",
-      "/assets/static/images/Corporate/Final - 8/5880534ff1d0bdfcf718af688c3d05e3.jpg",
+      "/assets/static/Images/Corporate/Final - 8/ed0f1c26d97bae9f12e55b171c82b306.jpg",
+      "/assets/static/Images/Corporate/Final - 8/44169568113dacf412b9a3771fc6e0fc.jpg",
+      "/assets/static/Images/Corporate/Final - 8/5880534ff1d0bdfcf718af688c3d05e3.jpg",
     ],
   },
 ];

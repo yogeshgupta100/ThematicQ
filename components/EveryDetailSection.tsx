@@ -5,27 +5,27 @@ import AnimatedSection from "./AnimatedSection";
 
 const eventImages = [
   {
-    src: "/assets/static/images/HomePage/Grid/img1.jpg",
+    src: "/assets/static/Images/Homepage/Grid/img1.jpg",
     alt: "Corporate Event Setup",
   },
   {
-    src: "/assets/static/images/HomePage/Grid/img2.jpg",
+    src: "/assets/static/Images/Homepage/Grid/img2.jpg",
     alt: "Event Production",
   },
   {
-    src: "/assets/static/images/HomePage/Grid/img3.jpg",
+    src: "/assets/static/Images/Homepage/Grid/img3.jpg",
     alt: "Stage Setup",
   },
   {
-    src: "/assets/static/images/HomePage/Grid/img4.jpg",
+    src: "/assets/static/Images/Homepage/Grid/img4.jpg",
     alt: "Event Venue",
   },
   {
-    src: "/assets/static/images/production/IMG-20250228-WA0007.jpg",
+    src: "/assets/static/Images/Production/IMG-20250228-WA0007.jpg",
     alt: "Production Event",
   },
   {
-    src: "/assets/static/images/production/IMG-20250228-WA0008.jpg",
+    src: "/assets/static/Images/Production/IMG-20250228-WA0008.jpg",
     alt: "Event Design",
   },
 ];

@@ -16,14 +16,14 @@ interface CarouselImage {
 const carouselImages: CarouselImage[] = [
   {
     id: 1,
-    src: "/assets/static/images/HomePage/landingScreen/img1.jpg",
+    src: "/assets/static/Images/Homepage/landingScreen/img1.jpg",
     alt: "Modern workspace",
     title: "Bringing Expert Together",
     subtitle: "",
   },
   {
     id: 2,
-    src: "/assets/static/images/HomePage/landingScreen/img2.jpg",
+    src: "/assets/static/Images/Homepage/landingScreen/img2.jpg",
     alt: "Business growth",
     title: "CONNECT, INSPIRE - INNOVATE",
     subtitle: "",
