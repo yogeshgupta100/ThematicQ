@@ -6,15 +6,15 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const advantageImages = [
   {
-    src: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80",
+    src: "/assets/static/Images/Production/section2/img1.jpg",
     alt: "Creative and technical mastery in event production",
   },
   {
-    src: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&q=80",
+    src: "/assets/static/Images/Production/section2/img2.jpg",
     alt: "Experienced production team at work",
   },
   {
-    src: "https://images.unsplash.com/photo-1519162808019-7de1683fa2ad?w=800&q=80",
+    src: "/assets/static/Images/Production/section2/img3.jpg",
     alt: "In-house fabrication and equipment",
   },
 ];
@@ -74,9 +74,7 @@ export default function WhyChooseProductionSection() {
         <AnimatedSection direction="up" delay={200}>
           <p className="text-lg md:text-xl text-gray-300 text-center max-w-4xl mx-auto mb-12 leading-relaxed">
             Event production requires experience and precision, and ThematicQ
-            incorporates storytelling. It&apos;s beyond just lights—it&apos;s
-            about connecting with and moving the audience and brand, making the
-            experience memorable to get repeat business.
+            incorporates storytelling.
           </p>
         </AnimatedSection>
 

@@ -17,7 +17,7 @@ export const metadata = {
 
 export default async function ThemeEventPage() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-black text-white md:my-20">
       <Suspense fallback={<HeaderSkeleton />}>
         <ThemeEventHeader />
       </Suspense>

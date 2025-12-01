@@ -63,17 +63,17 @@ function ImageCard({ item, index, aspectRatio = "square" }: ImageCardProps) {
 
 const topRowImages: ImageItem[] = [
   {
-    src: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=600&q=80",
+    src: "/assets/static/Images/Corporate/Final/img1.jpg",
     alt: "Corporate Conference",
     animationDirection: "left",
   },
   {
-    src: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=600&q=80",
+    src: "/assets/static/Images/Corporate/Final/img2.jpg",
     alt: "Business Meeting",
     animationDirection: "right",
   },
   {
-    src: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&q=80",
+    src: "/assets/static/Images/Corporate/Final/img3.jpg",
     alt: "Corporate Event",
     animationDirection: "left",
   },
@@ -81,12 +81,12 @@ const topRowImages: ImageItem[] = [
 
 const middleRowImages: ImageItem[] = [
   {
-    src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
+    src: "/assets/static/Images/Corporate/Final/img4.jpg",
     alt: "Corporate Gathering",
     animationDirection: "left",
   },
   {
-    src: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&q=80",
+    src: "/assets/static/Images/Corporate/Final/img5.jpg",
     alt: "Event Setup",
     animationDirection: "right",
   },
@@ -94,17 +94,17 @@ const middleRowImages: ImageItem[] = [
 
 const bottomRowImages: ImageItem[] = [
   {
-    src: "https://images.unsplash.com/photo-1519162808019-7de1683fa2ad?w=600&q=80",
+    src: "/assets/static/Images/Corporate/Final/img6.jpg",
     alt: "Corporate Presentation",
     animationDirection: "right",
   },
   {
-    src: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&q=80",
+    src: "/assets/static/Images/Corporate/Final/img7.jpg",
     alt: "Business Conference",
     animationDirection: "left",
   },
   {
-    src: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80",
+    src: "/assets/static/Images/Corporate/Final/img8.jpg",
     alt: "Corporate Event",
     animationDirection: "right",
   },
@@ -121,19 +121,16 @@ export default function CorporateIntro() {
               experiences that flow seamlessly from beginning to end. With five
               years of industry reputation, we specialise in well-organised,
               impactful events that foster community, build your brand, and
-              celebrate its essence. Our approach combines effective
-              collaboration, innovative planning, and flawless execution.
+              celebrate its essence.
             </p>
           </div>
           <div className="text-center mb-12">
             <p className="text-lg md:text-xl text-gray-300 max-w-7xl mx-auto leading-relaxed">
-              We aim to deliver well-organised, impactful events that foster
-              community, build your brand, and celebrate its essence. For us,
-              the method is straightforward: effective collaboration, innovative
-              planning, and flawless execution. At ThematicQ, we don’t just
-              promise an event; we deliver an experience, maintaining the flow
-              and easing uncertainty for a memorable time with family and
-              friends.
+              For us, the method is straightforward: effective collaboration,
+              innovative planning, and flawless execution. At ThematicQ, we
+              don’t just promise an event; we deliver an experience, maintaining
+              the flow and easing uncertainty for a memorable time with family
+              and friends.
             </p>
           </div>
         </AnimatedSection>

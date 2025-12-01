@@ -1,5 +1,6 @@
 "use client";
 
+import { title } from "process";
 import AnimatedSection from "../AnimatedSection";
 
 const processSteps = [
@@ -32,6 +33,12 @@ const processSteps = [
     title: "Post-Event Follow-Up",
     description:
       "The event ends, but our work continues. We analyse the data, assess the results, and help you scale for bigger, more meaningful events in the future.",
+  },
+  {
+    number: "6",
+    title: "Travel & Hospitality",
+    description:
+      "At ThematicQ, we make your travel and stay completely hassle-free. Whether you need help booking tickets, planning your stay, or arranging travel for an event, we take care of everything from start to finish.",
   },
 ];
 

@@ -7,32 +7,32 @@ import AnimatedSection from "../AnimatedSection";
 const carouselImages = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
+    src: "/assets/static/Images/Corporate/Final/img8.jpg",
     alt: "Corporate conference event",
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80",
+    src: "/assets/static/Images/Corporate/Final/img7.jpg",
     alt: "Business conference stage",
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80",
+    src: "/assets/static/Images/Corporate/Final/img6.jpg",
     alt: "Corporate event gathering",
   },
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80",
+    src: "/assets/static/Images/Corporate/Final/img4.jpg",
     alt: "Corporate meeting and networking",
   },
   {
     id: 5,
-    src: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&q=80",
+    src: "/assets/static/Images/Corporate/img5.jpg",
     alt: "Corporate event setup",
   },
   {
     id: 6,
-    src: "https://images.unsplash.com/photo-1519162808019-7de1683fa2ad?w=800&q=80",
+    src: "/assets/static/Images/Corporate/img6.jpg",
     alt: "Corporate presentation event",
   },
 ];
@@ -76,7 +76,7 @@ export default function TravelHospitality() {
   return (
     <section className="bg-black text-white py-16 md:py-24 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
-        <AnimatedSection direction="fade" delay={0}>
+        {/* <AnimatedSection direction="fade" delay={0}>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium mb-8 text-white">
             Travel & Hospitality
           </h2>
@@ -90,7 +90,7 @@ export default function TravelHospitality() {
             everything is clear, smooth, and easy to follow. We handle the
             details, so you can enjoy the journey.
           </p>
-        </AnimatedSection>
+        </AnimatedSection> */}
 
         {/* Carousel with overlapping images */}
         <div className="relative w-full h-[350px] sm:h-[400px] md:h-[500px] lg:h-[600px] flex items-center justify-center overflow-hidden sm:overflow-visible">

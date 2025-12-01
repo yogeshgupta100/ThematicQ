@@ -6,7 +6,7 @@ const reasons = [
   {
     title: "Creative Vision That Mirrors Yours",
     description:
-      "We don&apos;t impose our ideas—we refine and elevate your vision. Our team works closely with you to understand your narrative, ensuring every element of your themed event reflects your unique story and resonates with your audience.",
+      "We don't impose our ideas—we refine and elevate your vision. Our team works closely with you to understand your narrative, ensuring every element of your themed event reflects your unique story and resonates with your audience.",
   },
   {
     title: "Complete Thematic Execution",
@@ -26,7 +26,7 @@ const reasons = [
   {
     title: "Proven Experience & Professional Team",
     description:
-      "With 5+ years of experience, we&apos;ve built a reputation for excellence. Our professional team combines creativity with precision, ensuring every themed event is orderly, inventive, and picture-perfect.",
+      "With 5+ years of experience, we've built a reputation for excellence. Our professional team combines creativity with precision, ensuring every themed event is orderly, inventive, and picture-perfect.",
   },
 ];
 

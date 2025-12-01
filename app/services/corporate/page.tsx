@@ -21,7 +21,7 @@ export default async function CorporatePage() {
       </Suspense>
       <CorporateIntro />
       <CorporateSolutions />
-      <CoreValues />
+      {/* <CoreValues /> */}
       <VisionToLife />
       <TravelHospitality />
     </main>

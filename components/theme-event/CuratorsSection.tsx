@@ -23,11 +23,8 @@ export default function CuratorsSection() {
               lasting impressions.
             </p>
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-              Our approach goes beyond decoration—we weave stories through every
-              element, from concept development to decor, lighting,
-              entertainment, and guest interaction. Every detail is meticulously
-              planned to create a cohesive, memorable experience that your
-              guests will cherish for years to come.
+              We weave stories through every element, from concept development
+              to decor, lighting, entertainment, and guest interaction.
             </p>
           </div>
         </AnimatedSection>
@@ -36,7 +33,7 @@ export default function CuratorsSection() {
           <AnimatedSection direction="left" delay={400}>
             <div className="relative aspect-video rounded-lg overflow-hidden border border-gray-800 hover:border-teal-500/50 transition-all duration-500 group">
               <Image
-                src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1200&q=80"
+                src="/assets/static/Images/Themes/images/small/img7.jpg"
                 alt="Energetic party scene with masks and dynamic lighting"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -49,7 +46,7 @@ export default function CuratorsSection() {
           <AnimatedSection direction="right" delay={600}>
             <div className="relative aspect-video rounded-lg overflow-hidden border border-gray-800 hover:border-teal-500/50 transition-all duration-500 group">
               <Image
-                src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1200&q=80"
+                src="/assets/static/Images/Themes/images/small/img8.jpg"
                 alt="Vibrant colorful party setup with decorations"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110"

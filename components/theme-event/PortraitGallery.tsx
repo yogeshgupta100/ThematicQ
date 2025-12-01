@@ -6,15 +6,15 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const portraits = [
   {
-    src: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80",
+    src: "/assets/static/Images/Themes/lastSection/img1.jpg",
     alt: "Woman with curly dark hair in warm lighting",
   },
   {
-    src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80",
+    src: "/assets/static/Images/Themes/lastSection/img2.jpg",
     alt: "Person walking through autumn leaves",
   },
   {
-    src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&q=80",
+    src: "/assets/static/Images/Themes/lastSection/img3.jpg",
     alt: "Woman with long dark hair against textured wall",
   },
 ];

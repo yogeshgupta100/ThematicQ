@@ -45,12 +45,9 @@ export default function WhyChooseSection() {
             Why Choose ThematicQ?
           </h2>
           <p className="text-lg md:text-xl text-gray-300 text-center max-w-4xl mx-auto mb-12 leading-relaxed">
-            Because every event deserves a story. At ThematicQ, we don&apos;t
-            only manage events; we also manage meaningful, befitting, and
-            personal branding for experiences. And we aim to make every
-            gathering meaningful, befitting, and personal branding for artists,
-            and wedding management in India; that&apos;s why we are known as the
-            top corporate event management company.
+            At ThematicQ, We aim to make every gathering meaningful, befitting;
+            that&apos;s why we are known as the top corporate event management
+            company.
           </p>
         </AnimatedSection>
 

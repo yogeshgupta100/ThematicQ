@@ -6,27 +6,27 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const introImages = [
   {
-    src: "https://images.unsplash.com/photo-1519162808019-7de1683fa2ad?w=600&q=80",
+    src: "/assets/static/Images/Themes/images/small/img1.jpg",
     alt: "Formal event setup with tables and floral centerpieces",
   },
   {
-    src: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&q=80",
+    src: "/assets/static/Images/Themes/images/small/img2.jpg",
     alt: "Colorful cake with sprinkles",
   },
   {
-    src: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=600&q=80",
+    src: "/assets/static/Images/Themes/images/small/img3.jpg",
     alt: "Outdoor picnic gathering",
   },
   {
-    src: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&q=80",
+    src: "/assets/static/Images/Themes/images/small/img4.jpg",
     alt: "Birthday celebration with cake and decorations",
   },
   {
-    src: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=600&q=80",
+    src: "/assets/static/Images/Themes/images/small/img5.jpg",
     alt: "Festive party with people wearing headbands",
   },
   {
-    src: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80",
+    src: "/assets/static/Images/Themes/images/small/img6.jpg",
     alt: "Colorful festival celebration",
   },
 ];

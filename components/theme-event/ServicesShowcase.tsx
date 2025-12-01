@@ -6,22 +6,22 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const showcaseItems = [
   {
-    src: "https://images.unsplash.com/photo-1519162808019-7de1683fa2ad?w=800&q=80",
+    src: "/assets/static/Images/Themes/themeSection/collegeEvents.jpg",
     alt: "College event with traditional attire",
     label: "College Event & Stalls",
   },
   {
-    src: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80",
+    src: "/assets/static/Images/Themes/themeSection/floralDecoration.jpg",
     alt: "Floral decoration setup",
     label: "Floral Decoration",
   },
   {
-    src: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&q=80",
+    src: "/assets/static/Images/Themes/themeSection/festivalEvents.jpg",
     alt: "Masquerade mask with feathers",
     label: "Festival Events",
   },
   {
-    src: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&q=80",
+    src: "/assets/static/Images/Themes/img1.jpg",
     alt: "Serene landscape scene",
     label: "Wedding Theme Concept",
   },

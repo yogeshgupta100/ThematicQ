@@ -25,10 +25,10 @@ export default function TheQSection() {
               to create events inspired by emotion and meaning to achieve the
               intended goal.
             </p>
-            <p className="text-xl md:text-2xl font-semibold text-teal-400 animate-pulse">
+            {/* <p className="text-xl md:text-2xl font-semibold text-teal-400 animate-pulse">
               The Q in ThematicQ is a focal point of our story and represents
               three powerful ideas.
-            </p>
+            </p> */}
           </div>
         </AnimatedSection>
 
@@ -83,7 +83,7 @@ export default function TheQSection() {
         </div>
 
         {/* Concluding Paragraph */}
-        <AnimatedSection direction="fade" delay={400}>
+        {/* <AnimatedSection direction="fade" delay={400}>
           <div className="text-center max-w-4xl mx-auto">
             <p className="text-lg md:text-xl text-white leading-relaxed">
               It is these three &apos;Q&apos;s that define ThematicQ — a unit
@@ -92,7 +92,7 @@ export default function TheQSection() {
               long after.
             </p>
           </div>
-        </AnimatedSection>
+        </AnimatedSection> */}
       </div>
     </section>
   );

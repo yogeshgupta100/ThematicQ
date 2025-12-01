@@ -6,7 +6,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const productionImages = [
   {
-    src: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=80",
+    src: "/assets/static/Images/Production/section2/light1.png",
     alt: "Sound, light & visual mixing console",
     label: "Sound, Light & Visual",
   },
@@ -16,7 +16,22 @@ const productionImages = [
     label: "Stage Sets & Fabrication",
   },
   {
-    src: "https://images.unsplash.com/photo-1558655146-364adaf1fcc9?w=800&q=80",
+    src: "/assets/static/Images/Production/branding1.jpg",
+    alt: "Designs and branding materials",
+    label: "Designs & Branding",
+  },
+  {
+    src: "/assets/static/Images/Production/section2/light2.jpg",
+    alt: "Sound, light & visual mixing console",
+    label: "Sound, Light & Visual",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&q=80",
+    alt: "Stage sets and fabrication with lighting",
+    label: "Stage Sets & Fabrication",
+  },
+  {
+    src: "/assets/static/Images/Production/branding2.jpg",
     alt: "Designs and branding materials",
     label: "Designs & Branding",
   },
@@ -49,9 +64,52 @@ function ProductionImageCard({
         />
         <div className="absolute inset-0 bg-gradient-to-br from-teal-500/20 via-transparent to-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
-      <p className="text-white text-center mt-4 text-lg font-medium">
-        {item.label}
-      </p>
+    </div>
+  );
+}
+
+function ProductionColumn({
+  label,
+  images,
+  columnIndex,
+  reverse = false,
+}: {
+  label: string;
+  images: (typeof productionImages)[0][];
+  columnIndex: number;
+  reverse: boolean;
+}) {
+  const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 });
+
+  if (reverse) {
+    return (
+      <div
+        ref={ref}
+        className={`flex flex-col ${
+          isVisible ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
+        }`}
+        style={{ transitionDelay: `${columnIndex * 150}ms` }}
+      >
+        {/* Heading at the top */}
+        <h3 className="text-white text-center mb-6 text-lg md:text-xl font-medium">
+          {label}
+        </h3>
+        {/* Images below */}
+        <div className="space-y-6 md:space-y-8">
+          {images.map((item, index) => (
+            <ProductionImageCard key={index} item={item} index={index} />
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  // Original layout when reverse is false
+  return (
+    <div className="space-y-6 md:space-y-8">
+      {images.map((item, index) => (
+        <ProductionImageCard key={index} item={item} index={index} />
+      ))}
     </div>
   );
 }
@@ -93,11 +151,33 @@ export default function FabricationStageSection() {
           </div>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-          {productionImages.map((item, index) => (
-            <ProductionImageCard key={index} item={item} index={index} />
-          ))}
-        </div>
+        {(() => {
+          // Group images by label
+          const groupedImages = productionImages.reduce((acc, item) => {
+            if (!acc[item.label]) {
+              acc[item.label] = [];
+            }
+            acc[item.label].push(item);
+            return acc;
+          }, {} as Record<string, (typeof productionImages)[0][]>);
+
+          const labels = Object.keys(groupedImages);
+          const reverse = true;
+
+          return (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+              {labels.map((label, columnIndex) => (
+                <ProductionColumn
+                  key={label}
+                  label={label}
+                  images={groupedImages[label]}
+                  columnIndex={columnIndex}
+                  reverse={reverse}
+                />
+              ))}
+            </div>
+          );
+        })()}
       </div>
     </section>
   );

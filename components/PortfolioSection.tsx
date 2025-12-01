@@ -65,83 +65,123 @@ export default function PortfolioSection() {
   const portfolioItems: PortfolioItem[] = [
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
-      alt: "Corporate Event",
+      src: "/assets/static/images/Homepage/Portfolio/Corporate/img1.jpg",
+      alt: "Event Production",
       rowSpan: 2,
       colSpan: 1,
       animationDirection: "left",
     },
     {
       id: 2,
-      src: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80",
-      alt: "Conference Stage",
+      src: "/assets/static/images/Homepage/Portfolio/Corporate/img2.jpg",
+      alt: "Stage Setup",
       rowSpan: 1,
       colSpan: 1,
       animationDirection: "right",
     },
     {
       id: 3,
-      src: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80",
-      alt: "Outdoor Event",
+      src: "/assets/static/images/Homepage/Portfolio/Corporate/img3.jpg",
+      alt: "Production Event",
       rowSpan: 1,
       colSpan: 1,
       animationDirection: "right",
     },
     {
       id: 4,
-      src: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80",
-      alt: "Wedding Celebration",
+      src: "/assets/static/images/Homepage/Portfolio/Corporate/img4.jpg",
+      alt: "Event Setup",
       rowSpan: 1,
       colSpan: 1,
       animationDirection: "left",
     },
     {
       id: 5,
-      src: "https://images.unsplash.com/photo-1519162808019-7de1683fa2ad?w=800&q=80",
-      alt: "Festival Event",
+      src: "/assets/static/images/Homepage/Portfolio/Corporate/img5.jpg",
+      alt: "Fashion Show Production",
       rowSpan: 2,
       colSpan: 1,
       animationDirection: "right",
     },
     {
       id: 6,
-      src: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=800&q=80",
-      alt: "Product Launch",
+      src: "/assets/static/images/Homepage/Portfolio/Wedding/img1.jpg",
+      alt: "Production Stage",
       rowSpan: 1,
       colSpan: 1,
       animationDirection: "left",
     },
     {
       id: 7,
-      src: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80",
-      alt: "Award Ceremony",
+      src: "/assets/static/images/Homepage/Portfolio/Wedding/img2.jpg",
+      alt: "Event Production",
       rowSpan: 1,
       colSpan: 1,
       animationDirection: "left",
     },
     {
       id: 8,
-      src: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=80",
-      alt: "Concert Event",
+      src: "/assets/static/images/Homepage/Portfolio/Wedding/img3.jpg",
+      alt: "Production Setup",
       rowSpan: 2,
       colSpan: 1,
       animationDirection: "left",
     },
     {
       id: 9,
-      src: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&q=80",
-      alt: "Networking Event",
+      src: "/assets/static/images/Homepage/Portfolio/Wedding/img4.jpg",
+      alt: "Event Production",
       rowSpan: 1,
       colSpan: 1,
       animationDirection: "right",
     },
     {
       id: 10,
-      src: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&q=80",
-      alt: "Corporate Gathering",
+      src: "/assets/static/images/Homepage/Portfolio/Wedding/img5.jpg",
+      alt: "Production Event",
       rowSpan: 1,
       colSpan: 1,
       animationDirection: "right",
+    },
+    {
+      id: 11,
+      src: "/assets/static/images/Homepage/Portfolio/Corporate/img6.jpg",
+      alt: "Corporate Event Production",
+      rowSpan: 1,
+      colSpan: 1,
+      animationDirection: "left",
+    },
+    {
+      id: 12,
+      src: "/assets/static/images/Homepage/Portfolio/Corporate/img7.jpg",
+      alt: "Corporate Stage Setup",
+      rowSpan: 2,
+      colSpan: 1,
+      animationDirection: "right",
+    },
+    {
+      id: 13,
+      src: "/assets/static/images/Homepage/Portfolio/Corporate/img8.jpg",
+      alt: "Corporate Event",
+      rowSpan: 1,
+      colSpan: 1,
+      animationDirection: "right",
+    },
+    {
+      id: 14,
+      src: "/assets/static/images/Homepage/Portfolio/Corporate/img9.jpg",
+      alt: "Corporate Production",
+      rowSpan: 1,
+      colSpan: 1,
+      animationDirection: "left",
+    },
+    {
+      id: 15,
+      src: "/assets/static/images/Homepage/Portfolio/Corporate/img10.jpg",
+      alt: "Corporate Event Setup",
+      rowSpan: 2,
+      colSpan: 1,
+      animationDirection: "left",
     },
   ];
 
@@ -150,7 +190,7 @@ export default function PortfolioSection() {
       {/* Decorative gradient line */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-teal-400 to-transparent opacity-30"></div>
 
-      <div className="max-w-7xl mx-auto">
+      <div className="mx-auto">
         <AnimatedSection direction="fade" delay={0}>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium mb-4 text-center text-white">
             OUR PORTFOLIO
@@ -158,13 +198,16 @@ export default function PortfolioSection() {
           <p className="text-xl md:text-2xl text-teal-400 text-center mb-4 font-semibold">
             The Stories We&apos;ve Told
           </p>
-          <p className="text-lg md:text-xl text-gray-300 text-center max-w-4xl mx-auto mb-12 leading-relaxed">
-            Every event we create has its own heartbeat. It&apos;s own colour,
-            emotion, and story. To us, every portfolio is more than just photos,
-            setups, and smiles you see in our portfolio all remind us of a story
-            that began with a simple idea and grew into something wonderful.
-            Need a corporate event emcee or celebrity management agency?
-            Let&apos;s talk first.
+          <p className="text-lg md:text-xl text-gray-300 text-center mx-auto mb-12 leading-relaxed">
+            Every event we create has its own heartbeat. It's own colour,
+            emotion, and story. To us, every portfolio is more than just
+            pictures; it's made of experiences —experiences that connect people
+            and make them remember. Every project, whether an elegant corporate
+            conference, a mentalist for corporate events, sangeet decoration, a
+            vibrant theme festival, celebrity management, or a dreamy wedding,
+            embodies our belief that it is the details that make the difference.
+            We never repeat an idea. We always reinvent it for each brand,
+            story, and audience. 
           </p>
         </AnimatedSection>
 

@@ -21,11 +21,11 @@ export default function CustomisingSection() {
               layout. Our behind-the-scenes work encompasses stage construction,
               light design, sound and visuals, and artist management.
             </p>
-            <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+            {/* <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
               We blend science and artistry to create evocative and absorbing
               environments. Production Is Not The Arrangement; It Is The
               Choreography Of A Story In Motion.
-            </p>
+            </p> */}
           </div>
         </AnimatedSection>
       </div>

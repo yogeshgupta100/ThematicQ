@@ -4,7 +4,7 @@ export default async function ProductionHeader() {
   return (
     <section className="relative w-full h-[60vh] md:h-[70vh] overflow-hidden">
       <Image
-        src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1920&q=80"
+        src="/assets/static/Images/Production/banner.png"
         alt="Event Production"
         fill
         className="object-cover"
