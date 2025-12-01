@@ -11,7 +11,7 @@ const solutions = [
       "Want to get people talking about your brand? Start with an impactful launch. We conceptualise and organise events that get people talking about your vision, attract your target market, and secure the ideal attendees.",
     images: [
       "/assets/static/Images/Production/1a1bdc739c2b60944c50f3749ec2dec6.jpg",
-      "/assets/static/Images/Production/3875c1caed367201d23bd55760187b57.jpg",
+      "/assets/static/Images/Production/IMG-20250227-WA0010.jpg",
       "/assets/static/Images/Production/IMG-20250227-WA0009.jpg",
     ],
   },
@@ -43,7 +43,7 @@ const solutions = [
     description:
       "Milestones and successful moments deserve to be celebrated. Elegant award nights and exciting stage performances can achieve just that. We highlight your company's culture, the journey it took to get there, and everything it has accomplished.",
     images: [
-      "/assets/static/Images/Production/IMG-20250815-WA0002.jpg",
+      "/assets/static/Images/Production/IMG-20250815-WA0007.jpg",
       "/assets/static/Images/Production/IMG-20250903-WA0027.jpg",
       "/assets/static/Images/Production/IMG-20250903-WA0028.jpg",
     ],

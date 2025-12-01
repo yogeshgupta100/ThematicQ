@@ -18,7 +18,7 @@ const introImages = [
     alt: "Outdoor picnic gathering",
   },
   {
-    src: "/assets/static/Images/Themes/images/small/img4.jpg",
+    src: "/assets/static/Images/Themes/images/small/img4.JPG",
     alt: "Birthday celebration with cake and decorations",
   },
   {

@@ -76,8 +76,7 @@ export default function Navbar({ transparent }: NavbarProps) {
     {
       title: "Production",
       description: "Event production and execution services",
-      image:
-        "https://images.unsplash.com/photo-1478147427282-58a87fd1200c?w=400&q=80",
+      image: "/assets/static/Images/Production/banner.png",
       href: "/services/production",
     },
   ];
