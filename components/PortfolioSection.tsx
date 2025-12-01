@@ -199,15 +199,15 @@ export default function PortfolioSection() {
             The Stories We&apos;ve Told
           </p>
           <p className="text-lg md:text-xl text-gray-300 text-center mx-auto mb-12 leading-relaxed">
-            Every event we create has its own heartbeat. It's own colour,
+            Every event we create has its own heartbeat. It&apos;s own colour,
             emotion, and story. To us, every portfolio is more than just
-            pictures; it's made of experiences —experiences that connect people
-            and make them remember. Every project, whether an elegant corporate
-            conference, a mentalist for corporate events, sangeet decoration, a
-            vibrant theme festival, celebrity management, or a dreamy wedding,
-            embodies our belief that it is the details that make the difference.
-            We never repeat an idea. We always reinvent it for each brand,
-            story, and audience. 
+            pictures; it&apos;s made of experiences —experiences that connect
+            people and make them remember. Every project, whether an elegant
+            corporate conference, a mentalist for corporate events, sangeet
+            decoration, a vibrant theme festival, celebrity management, or a
+            dreamy wedding, embodies our belief that it is the details that make
+            the difference. We never repeat an idea. We always reinvent it for
+            each brand, story, and audience. 
           </p>
         </AnimatedSection>
 

@@ -63,7 +63,7 @@ export default function ThemeSolutionsSection() {
         <AnimatedSection direction="up" delay={200}>
           <p className="text-lg md:text-xl text-gray-300 text-center max-w-4xl mx-auto mb-12 leading-relaxed">
             At ThematicQ, we transform abstract or conceptual ideas into
-            seamless, memorable experiences. Whether it's a wedding, a national
+            seamless, memorable experiences. Whether it&apos;s a wedding, a national
             or cultural festival, or an end-of-semester event, we specialize in
             storytelling and embellishment that brings your vision to life.
           </p>
