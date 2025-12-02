@@ -62,15 +62,13 @@ export default function Navbar({ transparent }: NavbarProps) {
     {
       title: "Corporate",
       description: "Professional corporate events and conferences",
-      image:
-        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&q=80",
+      image: "/assets/static/Images/Corporate/Final/banner-final.jpg",
       href: "/services/corporate",
     },
     {
       title: "Theme Event",
       description: "Themed celebrations and special occasions",
-      image:
-        "https://images.unsplash.com/photo-1511578314322-379afb476865?w=400&q=80",
+      image: "/assets/static/Images/Themes/images/small/img5.jpg",
       href: "/services/theme-event",
     },
     {

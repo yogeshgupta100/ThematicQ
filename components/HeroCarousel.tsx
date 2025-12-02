@@ -18,14 +18,14 @@ const carouselImages: CarouselImage[] = [
     id: 1,
     src: "/assets/static/Images/Homepage/landingScreen/img1.jpg",
     alt: "Modern workspace",
-    title: "Bringing Expert Together",
-    subtitle: "",
+    title: "Precision Crafted.",
+    subtitle: "Human Connected. Unforgettable Delivered.",
   },
   {
     id: 2,
     src: "/assets/static/Images/Homepage/landingScreen/img2.jpg",
     alt: "Business growth",
-    title: "CONNECT, INSPIRE - INNOVATE",
+    title: "We turn your 'What If' into 'What Just Happened'.",
     subtitle: "",
   },
   {

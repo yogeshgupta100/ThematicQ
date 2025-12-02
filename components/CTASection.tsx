@@ -10,7 +10,10 @@ export default function CTASection() {
 
       <div className="max-w-7xl mx-auto text-center relative z-10">
         <AnimatedSection direction="fade" delay={0}>
-          <button className="px-8 md:px-12 py-4 md:py-5 text-lg md:text-xl font-semibold border-2 border-teal-500 text-white rounded-lg hover:bg-teal-500 transition-all duration-300">
+          <button
+            className="px-8 md:px-12 py-4 md:py-5 text-lg md:text-xl font-semibold border-2 border-teal-500 text-white rounded-lg hover:bg-teal-500 transition-all duration-300"
+            onClick={() => (window.location.href = "/contact")}
+          >
             Lets Talk
           </button>
         </AnimatedSection>

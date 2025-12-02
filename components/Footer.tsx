@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-white/80 backdrop-blur-sm text-white py-2 px-4">
+    <footer className="bg-white/80 backdrop-blur-sm text-white py-6 md:py-8 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          {/* Logo Section with multi-colored TQ icon */}
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 md:gap-8">
+          {/* Logo Section */}
           <div className="flex items-center gap-4">
             <Image
               src="/assets/images/logo_color.png"
@@ -17,12 +17,42 @@ export default function Footer() {
             />
           </div>
 
+          {/* Contact Information */}
+          <div className="flex-1 text-center md:text-left">
+            <div className="space-y-2 text-sm md:text-base text-black">
+              <p>
+                <span className="font-medium">Contact Number:</span>{" "}
+                <a
+                  href="tel:+919818634740"
+                  className="hover:text-teal-500 transition-colors"
+                >
+                  +91-9818634740
+                </a>
+              </p>
+              <p>
+                <span className="font-medium">Email:</span>{" "}
+                <a
+                  href="mailto:info@thematicq.com"
+                  className="hover:text-teal-500 transition-colors"
+                >
+                  info@thematicq.com
+                </a>
+              </p>
+              <p>
+                <span className="font-medium">Address:</span> B-29, Jeewan Park,
+                Uttam Nagar - New Delhi - 110059
+              </p>
+            </div>
+          </div>
+
           {/* Right side: Social Media Links and Copyright */}
           <div className="flex flex-col items-center md:items-end gap-3">
             {/* Social Media Links */}
             <div className="flex items-center gap-4">
               <Link
-                href="#"
+                href="https://www.linkedin.com/company/thematic-q/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-black hover:text-teal-500 transition-colors duration-300"
                 aria-label="LinkedIn"
               >
