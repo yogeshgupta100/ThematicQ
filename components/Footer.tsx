@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-white/80 backdrop-blur-sm text-white py-6 md:py-8 px-4">
-      <div className="max-w-7xl mx-auto">
+      <div className="mx-auto">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 md:gap-8">
           {/* Logo Section */}
           <div className="flex items-center gap-4">
@@ -18,7 +18,7 @@ export default function Footer() {
           </div>
 
           {/* Contact Information */}
-          <div className="flex-1 text-center md:text-left">
+          <div className="flex-1 text-center md:text-center mx-auto justify-center items-center">
             <div className="space-y-2 text-sm md:text-base text-black">
               <p>
                 <span className="font-medium">Contact Number:</span>{" "}
