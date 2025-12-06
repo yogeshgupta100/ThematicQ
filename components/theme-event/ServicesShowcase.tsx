@@ -21,7 +21,7 @@ const showcaseItems = [
     label: "Festival Events",
   },
   {
-    src: "/assets/static/Images/Themes/img1.jpg",
+    src: "/assets/static/Images/Themes/images/wedding.jpg",
     alt: "Serene landscape scene",
     label: "Wedding Theme Concept",
   },
