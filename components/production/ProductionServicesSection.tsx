@@ -10,9 +10,9 @@ const services = [
     description:
       "We design stages that hold attention, using the latest equipment and meticulous artistic precision. We ensure light, sound, and emotion are in sync for captivating cinematic experiences that leave lasting impressions.",
     images: [
-      "/assets/static/Images/Production/1a1bdc739c2b60944c50f3749ec2dec6.jpg",
-      "/assets/static/Images/Production/3875c1caed367201d23bd55760187b57.jpg",
-      "/assets/static/Images/Production/IMG-20250227-WA0009.jpg",
+      "/assets/static/Images/Production/Production/Stage, Sound & Lighting/img1.jpg",
+      "/assets/static/Images/Production/Production/Stage, Sound & Lighting/img2.jpg",
+      "/assets/static/Images/Production/Production/Stage, Sound & Lighting/img3.jpg",
     ],
   },
   {
@@ -21,9 +21,9 @@ const services = [
     description:
       "Our in-house fabrication crew constructs magnificent and robust, attention-grabbing, and sensitive structures. With craftsmanship, precision, and design brilliance as building blocks, we create complex stage sets that bring your vision to life.",
     images: [
-      "/assets/static/Images/Production/IMG-20250227-WA0010.jpg",
-      "/assets/static/Images/Production/IMG-20250228-WA0007.jpg",
-      "/assets/static/Images/Production/IMG-20250228-WA0008.jpg",
+      "/assets/static/Images/Production/Production/Fabrication/img1.jpg",
+      "/assets/static/Images/Production/Production/Fabrication/img2.jpg",
+      "/assets/static/Images/Production/Production/Fabrication/img3.jpg",
     ],
   },
   {
@@ -32,9 +32,9 @@ const services = [
     description:
       "We keep event setup professional and creative, ensuring the setup serves as a centrepiece rather than just a supporting element. Our approach merges artistic vision with technical excellence.",
     images: [
-      "/assets/static/Images/Production/IMG-20250228-WA0010.jpg",
-      "/assets/static/Images/Production/IMG-20250706-WA0003.jpg",
-      "/assets/static/Images/Production/IMG-20250815-WA0001.jpg",
+      "/assets/static/Images/Production/Production/Creativity and Construction Cross Paths/img1.jpg",
+      "/assets/static/Images/Production/Production/Creativity and Construction Cross Paths/img2.jpg",
+      "/assets/static/Images/Production/Production/Creativity and Construction Cross Paths/img3.jpg",
     ],
   },
   {
@@ -43,9 +43,9 @@ const services = [
     description:
       "Our content creation team provides storytelling elements to boost brand and captivate the audience. We offer live and digital experiences to enhance emotional connection and ensure an unforgettable message that resonates.",
     images: [
-      "/assets/static/Images/Production/IMG-20250815-WA0002.jpg",
-      "/assets/static/Images/Production/IMG-20250903-WA0027.jpg",
-      "/assets/static/Images/Production/IMG-20250903-WA0028.jpg",
+      "/assets/static/Images/Production/Production/Your Event Is More Than Just Visuals/img1.jpg",
+      "/assets/static/Images/Production/Production/Your Event Is More Than Just Visuals/img2.jpg",
+      "/assets/static/Images/Production/Production/Your Event Is More Than Just Visuals/img3.jpg",
     ],
   },
   {
@@ -54,9 +54,9 @@ const services = [
     description:
       "We make fashion shows come alive with precision, ensuring high-energy fashion shows mesmerise the audience. Everything, including the outfits, the models, and every cue, is perfectly synchronised for a flawless runway experience.",
     images: [
-      "/assets/static/Images/Production/3 - Fashion Show etc/4f0d96736e2be70ca13d55b333e3adfa.jpg",
-      "/assets/static/Images/Production/3 - Fashion Show etc/9f7dc0d68673433bca362265131881dd.jpg",
-      "/assets/static/Images/Production/3 - Fashion Show etc/f2876b9dcde259ed946c0b74ada55bda.jpg",
+      "/assets/static/Images/Production/Production/Fashion Show Production/img1.jpg",
+      "/assets/static/Images/Production/Production/Fashion Show Production/img2.jpg",
+      "/assets/static/Images/Production/Production/Fashion Show Production/img3.jpg",
     ],
   },
   {
@@ -65,9 +65,9 @@ const services = [
     description:
       "We prioritize booking artists, coordinating schedules, managing hospitality, and handling technical logistics to ensure a seamless performance that makes a connection. Our artist management ensures every performer shines.",
     images: [
-      "/assets/static/Images/Production/3 Mix/1ac0bbf029ecc5539f1d613ae76b2422.jpg",
-      "/assets/static/Images/Production/3 Mix/553f2c0dd9e75c3852bbcc509aec4a63.jpg",
-      "/assets/static/Images/Production/3 Mix/75f3c2b92d8f2a02e599c761825a97c9.jpg",
+      "/assets/static/Images/Production/Production/Artist Management/img1.jpg",
+      "/assets/static/Images/Production/Production/Artist Management/img2.jpg",
+      "/assets/static/Images/Production/Production/Artist Management/img3.jpg",
     ],
   },
 ];

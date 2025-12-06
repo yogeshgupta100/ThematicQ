@@ -6,15 +6,15 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const advantageImages = [
   {
-    src: "/assets/static/Images/Production/section2/img1.jpg",
+    src: "/assets/static/Images/Production/Production/Bottom Pics/img1.jpg",
     alt: "Creative and technical mastery in event production",
   },
   {
-    src: "/assets/static/Images/Production/section2/img2.jpg",
+    src: "/assets/static/Images/Production/Production/Bottom Pics/img2.jpg",
     alt: "Experienced production team at work",
   },
   {
-    src: "/assets/static/Images/Production/section2/img3.jpg",
+    src: "/assets/static/Images/Production/Production/Bottom Pics/img3.jpg",
     alt: "In-house fabrication and equipment",
   },
 ];
