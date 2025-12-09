@@ -65,7 +65,7 @@ export default function PortfolioSection() {
   const portfolioItems: PortfolioItem[] = [
     {
       id: 1,
-      src: "/assets/static/Images/Homepage/Portfolio/Corporate/img1.jpg",
+      src: "/assets/static/Images/Homepage/Portfolio/img1.jpg",
       alt: "Event Production",
       rowSpan: 2,
       colSpan: 1,
@@ -73,7 +73,7 @@ export default function PortfolioSection() {
     },
     {
       id: 2,
-      src: "/assets/static/Images/Homepage/Portfolio/Corporate/img2.jpg",
+      src: "/assets/static/Images/Homepage/Portfolio/img2.jpg",
       alt: "Stage Setup",
       rowSpan: 1,
       colSpan: 1,
@@ -81,7 +81,7 @@ export default function PortfolioSection() {
     },
     {
       id: 3,
-      src: "/assets/static/Images/Homepage/Portfolio/Corporate/img3.jpg",
+      src: "/assets/static/Images/Homepage/Portfolio/img3.avif",
       alt: "Production Event",
       rowSpan: 1,
       colSpan: 1,
@@ -89,7 +89,7 @@ export default function PortfolioSection() {
     },
     {
       id: 4,
-      src: "/assets/static/Images/Homepage/Portfolio/Corporate/img4.jpg",
+      src: "/assets/static/Images/Homepage/Portfolio/img4.jpg",
       alt: "Event Setup",
       rowSpan: 1,
       colSpan: 1,
@@ -97,7 +97,7 @@ export default function PortfolioSection() {
     },
     {
       id: 5,
-      src: "/assets/static/Images/Homepage/Portfolio/Corporate/img5.jpg",
+      src: "/assets/static/Images/Homepage/Portfolio/img5.jpg",
       alt: "Fashion Show Production",
       rowSpan: 2,
       colSpan: 1,
@@ -105,7 +105,7 @@ export default function PortfolioSection() {
     },
     {
       id: 6,
-      src: "/assets/static/Images/Homepage/Portfolio/Wedding/img1.JPG",
+      src: "/assets/static/Images/Homepage/Portfolio/img6.jpg",
       alt: "Production Stage",
       rowSpan: 1,
       colSpan: 1,
@@ -113,7 +113,7 @@ export default function PortfolioSection() {
     },
     {
       id: 7,
-      src: "/assets/static/Images/Homepage/Portfolio/Wedding/img2.jpg",
+      src: "/assets/static/Images/Homepage/Portfolio/img7.jpg",
       alt: "Event Production",
       rowSpan: 1,
       colSpan: 1,
@@ -121,7 +121,7 @@ export default function PortfolioSection() {
     },
     {
       id: 8,
-      src: "/assets/static/Images/Homepage/Portfolio/Wedding/img3.jpg",
+      src: "/assets/static/Images/Homepage/Portfolio/img8.jpg",
       alt: "Production Setup",
       rowSpan: 2,
       colSpan: 1,
@@ -129,7 +129,7 @@ export default function PortfolioSection() {
     },
     {
       id: 9,
-      src: "/assets/static/Images/Homepage/Portfolio/Wedding/img4.jpg",
+      src: "/assets/static/Images/Homepage/Portfolio/img9.jpg",
       alt: "Event Production",
       rowSpan: 1,
       colSpan: 1,
@@ -137,7 +137,7 @@ export default function PortfolioSection() {
     },
     {
       id: 10,
-      src: "/assets/static/Images/Homepage/Portfolio/Wedding/img5.jpg",
+      src: "/assets/static/Images/Homepage/Portfolio/img10.jpg",
       alt: "Production Event",
       rowSpan: 1,
       colSpan: 1,
@@ -145,7 +145,7 @@ export default function PortfolioSection() {
     },
     {
       id: 11,
-      src: "/assets/static/Images/Homepage/Portfolio/Corporate/img6.jpg",
+      src: "/assets/static/Images/Homepage/Portfolio/img11.jpg",
       alt: "Corporate Event Production",
       rowSpan: 1,
       colSpan: 1,
@@ -153,7 +153,7 @@ export default function PortfolioSection() {
     },
     {
       id: 12,
-      src: "/assets/static/Images/Homepage/Portfolio/Corporate/img7.jpg",
+      src: "/assets/static/Images/Homepage/Portfolio/img12.jpg",
       alt: "Corporate Stage Setup",
       rowSpan: 2,
       colSpan: 1,
@@ -161,7 +161,7 @@ export default function PortfolioSection() {
     },
     {
       id: 13,
-      src: "/assets/static/Images/Homepage/Portfolio/Corporate/img8.jpg",
+      src: "/assets/static/Images/Homepage/Portfolio/img13.jpg",
       alt: "Corporate Event",
       rowSpan: 1,
       colSpan: 1,
@@ -169,7 +169,7 @@ export default function PortfolioSection() {
     },
     {
       id: 14,
-      src: "/assets/static/Images/Homepage/Portfolio/Corporate/img9.jpg",
+      src: "/assets/static/Images/Homepage/Portfolio/img14.jpg",
       alt: "Corporate Production",
       rowSpan: 1,
       colSpan: 1,
@@ -177,7 +177,7 @@ export default function PortfolioSection() {
     },
     {
       id: 15,
-      src: "/assets/static/Images/Homepage/Portfolio/Corporate/img10.jpg",
+      src: "/assets/static/Images/Homepage/Portfolio/img15.jpg",
       alt: "Corporate Event Setup",
       rowSpan: 2,
       colSpan: 1,

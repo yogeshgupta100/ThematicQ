@@ -21,11 +21,11 @@ const eventImages = [
     alt: "Event Venue",
   },
   {
-    src: "/assets/static/Images/Production/IMG-20250228-WA0007.jpg",
+    src: "/assets/static/Images/Homepage/Grid/img5.jpg",
     alt: "Production Event",
   },
   {
-    src: "/assets/static/Images/Production/IMG-20250228-WA0008.jpg",
+    src: "/assets/static/Images/Homepage/Grid/img6.jpg",
     alt: "Event Design",
   },
 ];
