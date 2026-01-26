@@ -60,19 +60,19 @@ function TeamMemberCard({ member, index }: TeamMemberCardProps) {
 const teamMembers: TeamMember[] = [
   {
     name: "Danish Pandit",
-    image: "/assets/static/Images/About/Team/img1.jpg",
+    image: "/assets/images/danish.jpeg",
     description:
       "Danish is a South Asia-based multimedia journalist with a passion for visual storytelling, focusing on crucial issues. His extensive experience as a producer and independent journalist has allowed him to contribute to prominent media outlets, including The Guardian, Al Jazeera, The Wire, Business Insider, EuroNews, Vice, and TIME magazine. Danish's expertise in filming, editing, and reporting not only ensures the creation of impactful content but also enriches the narrative of events managed by our company. His ability to capture and convey significant social narratives enhances event experiences, engages audiences, and fortifies the thematic elements of various occasions.",
   },
   {
     name: "Ravish Ahamed",
-    image: "/assets/static/Images/About/Team/img2.jpg",
+    image: "/assets/images/ravish.jpeg",
     description:
       "Ravish is a result-driven professional with over 8 years of experience in client servicing, customer engagement, and event management. He excels in building relationships and enhancing customer satisfaction across various sectors. With a strong background in CRM strategies and data analysis, he has successfully led projects for corporate and government clients, delivering high-impact campaigns and activations. Currently focused on CRM-driven real estate projects, Ravish leverages personalized communication and cross-functional collaboration to ensure seamless execution and exceptional client experiences.",
   },
   {
     name: "Manvi Jauhari",
-    image: "/assets/static/Images/About/Team/img3.jpg",
+    image: "/assets/images/manvi.jpg",
     description:
       "Manvi is currently pursuing a Master's of Science in Marketing at Hong Kong University of Science and Technology. With a dynamic background in event management, marketing, communications, and journalism, she excels in orchestrating seamless events while implementing comprehensive 360 marketing strategies. Her skills in optimizing workflows not only enhance operational efficiency but also ensure that every aspect of event planning and execution aligns with overarching marketing objectives. Holding a Post Graduation Diploma in Multimedia Journalism and a Bachelor's in Physics with a minor in Positive Psychology, Manvi brings a unique blend of analytical and creative skills.",
   },
