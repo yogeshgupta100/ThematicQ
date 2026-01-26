@@ -76,21 +76,6 @@ export default function TravelHospitality() {
   return (
     <section className="bg-black text-white py-16 md:py-24 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
-        {/* <AnimatedSection direction="fade" delay={0}>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium mb-8 text-white">
-            Travel & Hospitality
-          </h2>
-          <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-4xl mb-12">
-            At ThematicQ, we make your travel and stay completely hassle-free.
-            Whether you need help booking tickets, planning your stay, or
-            arranging travel for an event, we take care of everything from start
-            to finish. We help you choose comfortable stays, arrange smooth
-            travel plans, and make sure your entire journey is well-organized.
-            Our goal is simple — to give you a stress-free experience where
-            everything is clear, smooth, and easy to follow. We handle the
-            details, so you can enjoy the journey.
-          </p>
-        </AnimatedSection> */}
 
         {/* Carousel with overlapping images */}
         <div className="relative w-full h-[350px] sm:h-[400px] md:h-[500px] lg:h-[600px] flex items-center justify-center overflow-hidden sm:overflow-visible">

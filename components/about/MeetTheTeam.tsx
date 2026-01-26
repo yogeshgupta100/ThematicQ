@@ -2,100 +2,79 @@
 
 import Image from "next/image";
 import AnimatedSection from "../AnimatedSection";
-import { useParallax, useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 interface TeamMember {
-  src: string;
-  alt: string;
-  animationDirection: "left" | "right";
-  aspectRatio: "vertical" | "horizontal" | "large-horizontal";
+  name: string;
+  image: string;
+  description: string;
 }
 
-interface TeamImageCardProps {
+interface TeamMemberCardProps {
   member: TeamMember;
   index: number;
 }
 
-function TeamImageCard({ member, index }: TeamImageCardProps) {
-  const { ref: parallaxRef, offset } = useParallax(0.2);
+function TeamMemberCard({ member, index }: TeamMemberCardProps) {
   const { ref: animationRef, isVisible } = useScrollAnimation({
     threshold: 0.1,
     triggerOnce: true,
   });
 
-  const aspectClass =
-    member.aspectRatio === "vertical"
-      ? "aspect-[6/4]"
-      : member.aspectRatio === "large-horizontal"
-      ? "aspect-[10/9]"
-      : "aspect-[4/3]";
-
   return (
     <div
       ref={animationRef}
-      className={`relative ${aspectClass} rounded-lg overflow-hidden border border-teal-500/20 hover:border-teal-500/50 transition-all duration-500 group cursor-pointer ${
+      className={`flex flex-col transition-all duration-700 ${
         isVisible
-          ? "translate-x-0 opacity-100"
-          : member.animationDirection === "left"
-          ? "-translate-x-12 opacity-0"
-          : "translate-x-12 opacity-0"
+          ? "translate-y-0 opacity-100"
+          : "translate-y-12 opacity-0"
       }`}
       style={{
-        transitionDelay: `${index * 100}ms`,
+        transitionDelay: `${index * 150}ms`,
       }}
     >
-      <div
-        ref={parallaxRef}
-        className="relative w-full h-full"
-        style={{ transform: `translateY(${offset}px)` }}
-      >
+      {/* Image Container */}
+      <div className="relative aspect-[3/4] w-full overflow-hidden rounded-sm mb-6 group">
         <Image
-          src={member.src}
-          alt={member.alt}
+          src={member.image}
+          alt={member.name}
           fill
-          className="object-cover transition-transform duration-700 group-hover:scale-110"
-          sizes={
-            member.aspectRatio === "vertical"
-              ? "(max-width: 768px) 100vw, 50vw"
-              : "(max-width: 768px) 100vw, 50vw"
-          }
+          className="object-cover transition-transform duration-700 group-hover:scale-105"
+          sizes="(max-width: 768px) 100vw, 33vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-teal-500/20 via-transparent to-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
+
+      {/* Name */}
+      <h3 className="text-2xl md:text-3xl font-bold text-[#EBB964] mb-4">
+        {member.name}
+      </h3>
+
+      {/* Description */}
+      <p className="text-gray-300 text-sm md:text-base leading-relaxed">
+        {member.description}
+      </p>
     </div>
   );
 }
 
 const teamMembers: TeamMember[] = [
   {
-    src: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80",
-    alt: "Team Member 1",
-    animationDirection: "left",
-    aspectRatio: "vertical",
+    name: "Danish Pandit",
+    image: "/assets/static/Images/About/Team/img1.jpg",
+    description:
+      "Danish is a South Asia-based multimedia journalist with a passion for visual storytelling, focusing on crucial issues. His extensive experience as a producer and independent journalist has allowed him to contribute to prominent media outlets, including The Guardian, Al Jazeera, The Wire, Business Insider, EuroNews, Vice, and TIME magazine. Danish's expertise in filming, editing, and reporting not only ensures the creation of impactful content but also enriches the narrative of events managed by our company. His ability to capture and convey significant social narratives enhances event experiences, engages audiences, and fortifies the thematic elements of various occasions.",
   },
   {
-    src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80",
-    alt: "Team Member 2",
-    animationDirection: "right",
-    aspectRatio: "vertical",
+    name: "Ravish Ahamed",
+    image: "/assets/static/Images/About/Team/img2.jpg",
+    description:
+      "Ravish is a result-driven professional with over 8 years of experience in client servicing, customer engagement, and event management. He excels in building relationships and enhancing customer satisfaction across various sectors. With a strong background in CRM strategies and data analysis, he has successfully led projects for corporate and government clients, delivering high-impact campaigns and activations. Currently focused on CRM-driven real estate projects, Ravish leverages personalized communication and cross-functional collaboration to ensure seamless execution and exceptional client experiences.",
   },
   {
-    src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&q=80",
-    alt: "Team Member 3",
-    animationDirection: "left",
-    aspectRatio: "large-horizontal",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&q=80",
-    alt: "Team Member 4",
-    animationDirection: "right",
-    aspectRatio: "horizontal",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&q=80",
-    alt: "Team Member 5",
-    animationDirection: "left",
-    aspectRatio: "horizontal",
+    name: "Manvi Jauhari",
+    image: "/assets/static/Images/About/Team/img3.jpg",
+    description:
+      "Manvi is currently pursuing a Master's of Science in Marketing at Hong Kong University of Science and Technology. With a dynamic background in event management, marketing, communications, and journalism, she excels in orchestrating seamless events while implementing comprehensive 360 marketing strategies. Her skills in optimizing workflows not only enhance operational efficiency but also ensure that every aspect of event planning and execution aligns with overarching marketing objectives. Holding a Post Graduation Diploma in Multimedia Journalism and a Bachelor's in Physics with a minor in Positive Psychology, Manvi brings a unique blend of analytical and creative skills.",
   },
 ];
 
@@ -104,45 +83,24 @@ export default function MeetTheTeam() {
     <section className="bg-black text-white py-16 md:py-24 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
         <AnimatedSection direction="fade" delay={0}>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium mb-4 text-white">
-            Meet the Team: The Talented People Who Elaborate on the Images
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#EBB964] mb-6">
+            Our Team
           </h2>
-          <div className="space-y-6 text-lg md:text-xl text-gray-300 leading-relaxed max-w-4xl mb-12">
+          <div className="space-y-4 text-base md:text-lg text-gray-300 leading-relaxed max-w-5xl mb-16">
             <p>
-              Our team is a collective of visionaries, strategists, and builders
-              who work together to turn moments into history. Each member brings
-              unique expertise, passion, and dedication to every project we
-              undertake.
+              Visionaries, strategists, and builders, we work together to turn moments into history. Every ThematicQ Creation is a Story, and we work together to animate and bring it to Life. Every member is specialised and devoted to various aspects, including resource and creative production, design, event management, and working narratively with visuals.
             </p>
             <p>
-              We are specialists in our craft, committed to exceeding
-              expectations through collaboration, openness, and collective
-              achievement. Together, we don&apos;t just plan events—we create
-              experiences that inspire, connect, and are remembered for years to
-              come.
+              Across the various aspects, every resource and technical resource is devoted and well orchestrated to deliver elements that exceed expectations and create an experience the guests have never witnessed, leaving them shocked. Our values include collaboration, openness, and collective achievement. We cherish your story as our own.
             </p>
           </div>
         </AnimatedSection>
 
-        {/* Team Grid - Exact Layout: 2 vertical left, large horizontal + 2 horizontal right */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-          {/* Left Column - 2 Vertical Images */}
-          <div className="flex flex-col gap-4 md:gap-6">
-            <TeamImageCard member={teamMembers[0]} index={0} />
-            <TeamImageCard member={teamMembers[1]} index={1} />
-          </div>
-
-          {/* Right Column */}
-          <div className="flex flex-col gap-4 md:gap-6">
-            {/* Top Right - Large Horizontal Image */}
-            <TeamImageCard member={teamMembers[2]} index={2} />
-
-            {/* Bottom Right - 2 Horizontal Images */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
-              <TeamImageCard member={teamMembers[3]} index={3} />
-              <TeamImageCard member={teamMembers[4]} index={4} />
-            </div>
-          </div>
+        {/* Team Grid - 3 Columns */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
+          {teamMembers.map((member, index) => (
+            <TeamMemberCard key={member.name} member={member} index={index} />
+          ))}
         </div>
       </div>
     </section>

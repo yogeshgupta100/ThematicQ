@@ -5,6 +5,7 @@
 :root {
   --background: #000000;
   --foreground: #ffffff;
+  --golden: #EBB964;
 }
 
 body {
@@ -13,9 +14,29 @@ body {
   font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+/* Golden headings and bold text */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--golden);
+}
+
+strong, b {
+  color: var(--golden);
+}
+
+/* Override for light backgrounds */
+.bg-white h1, .bg-white h2, .bg-white h3, .bg-white h4, .bg-white h5, .bg-white h6,
+.bg-gray-50 h1, .bg-gray-50 h2, .bg-gray-50 h3, .bg-gray-50 h4, .bg-gray-50 h5, .bg-gray-50 h6,
+.bg-gray-100 h1, .bg-gray-100 h2, .bg-gray-100 h3, .bg-gray-100 h4, .bg-gray-100 h5, .bg-gray-100 h6 {
+  color: var(--golden);
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  
+  .text-golden {
+    color: var(--golden);
   }
 }
 

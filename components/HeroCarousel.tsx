@@ -16,7 +16,7 @@ interface CarouselImage {
 const carouselImages: CarouselImage[] = [
   {
     id: 1,
-    src: "/assets/static/Images/Homepage/landingScreen/img1.jpg",
+    src: "/assets/static/Images/Homepage/landingScreen/img1.png",
     alt: "Modern workspace",
     title: "Precision Crafted.",
     subtitle: "Human Connected. Unforgettable Delivered.",
