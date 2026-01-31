@@ -5,14 +5,12 @@ import AnimatedSection from "./AnimatedSection";
 export default function TheQSection() {
   return (
     <section className="bg-black text-white py-16 md:py-24 px-4 md:px-8 relative overflow-hidden">
-      {/* Decorative background elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-72 h-72 bg-teal-400 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-teal-400 rounded-full blur-3xl"></div>
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
-        {/* Hero Text */}
         <AnimatedSection direction="fade" delay={0}>
           <div className="text-center mb-16">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-medium mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
@@ -25,16 +23,10 @@ export default function TheQSection() {
               to create events inspired by emotion and meaning to achieve the
               intended goal.
             </p>
-            {/* <p className="text-xl md:text-2xl font-semibold text-teal-400 animate-pulse">
-              The Q in ThematicQ is a focal point of our story and represents
-              three powerful ideas.
-            </p> */}
           </div>
         </AnimatedSection>
 
-        {/* Three Q Columns */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-12">
-          {/* Q for Question */}
           <AnimatedSection direction="up" delay={100}>
             <div className="text-center group">
               <h2 className="text-lg md:text-xl font-medium mb-4 text-white">
@@ -48,7 +40,6 @@ export default function TheQSection() {
             </div>
           </AnimatedSection>
 
-          {/* Q for Quality */}
           <AnimatedSection direction="up" delay={200}>
             <div className="text-center group">
               <h2 className="text-lg md:text-xl font-medium mb-4 text-white">
@@ -66,7 +57,6 @@ export default function TheQSection() {
             </div>
           </AnimatedSection>
 
-          {/* Q for Quotient */}
           <AnimatedSection direction="up" delay={300}>
             <div className="text-center group">
               <h2 className="text-lg md:text-xl font-medium mb-4 text-white">
@@ -81,18 +71,6 @@ export default function TheQSection() {
             </div>
           </AnimatedSection>
         </div>
-
-        {/* Concluding Paragraph */}
-        {/* <AnimatedSection direction="fade" delay={400}>
-          <div className="text-center max-w-4xl mx-auto">
-            <p className="text-lg md:text-xl text-white leading-relaxed">
-              It is these three &apos;Q&apos;s that define ThematicQ — a unit
-              that transforms the boring into extraordinary, weaving your events
-              into heartfelt narratives that your audience will carry with them
-              long after.
-            </p>
-          </div>
-        </AnimatedSection> */}
       </div>
     </section>
   );

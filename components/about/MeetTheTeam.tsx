@@ -33,7 +33,6 @@ function TeamMemberCard({ member, index }: TeamMemberCardProps) {
         transitionDelay: `${index * 150}ms`,
       }}
     >
-      {/* Image Container */}
       <div className="relative aspect-[3/4] w-full overflow-hidden rounded-sm mb-6 group">
         <Image
           src={member.image}
@@ -44,12 +43,10 @@ function TeamMemberCard({ member, index }: TeamMemberCardProps) {
         />
       </div>
 
-      {/* Name */}
       <h3 className="text-2xl md:text-3xl font-bold text-[#EBB964] mb-4">
         {member.name}
       </h3>
 
-      {/* Description */}
       <p className="text-gray-300 text-sm md:text-base leading-relaxed">
         {member.description}
       </p>
@@ -96,7 +93,6 @@ export default function MeetTheTeam() {
           </div>
         </AnimatedSection>
 
-        {/* Team Grid - 3 Columns */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
           {teamMembers.map((member, index) => (
             <TeamMemberCard key={member.name} member={member} index={index} />

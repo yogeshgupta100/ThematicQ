@@ -7,8 +7,6 @@ import ServicesShowcase from "@/components/theme-event/ServicesShowcase";
 import WhyChooseThemeSection from "@/components/theme-event/WhyChooseThemeSection";
 import PortraitGallery from "@/components/theme-event/PortraitGallery";
 
-// All theme-event components are located in @/components/theme-event/
-
 export const metadata = {
   title: "Theme Events - ThematicQ",
   description:

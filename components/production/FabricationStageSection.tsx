@@ -90,11 +90,9 @@ function ProductionColumn({
         }`}
         style={{ transitionDelay: `${columnIndex * 150}ms` }}
       >
-        {/* Heading at the top */}
         <h3 className="text-white text-center mb-6 text-lg md:text-xl font-medium">
           {label}
         </h3>
-        {/* Images below */}
         <div className="space-y-6 md:space-y-8">
           {images.map((item, index) => (
             <ProductionImageCard key={index} item={item} index={index} />
@@ -104,7 +102,6 @@ function ProductionColumn({
     );
   }
 
-  // Original layout when reverse is false
   return (
     <div className="space-y-6 md:space-y-8">
       {images.map((item, index) => (
@@ -152,7 +149,6 @@ export default function FabricationStageSection() {
         </AnimatedSection>
 
         {(() => {
-          // Group images by label
           const groupedImages = productionImages.reduce((acc, item) => {
             if (!acc[item.label]) {
               acc[item.label] = [];

@@ -134,8 +134,7 @@ export default function CorporateIntro() {
             </p>
           </div>
         </AnimatedSection>
-
-        {/* Corporate Event Images */}
+    
         <div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
             {topRowImages.map((image, i) => (

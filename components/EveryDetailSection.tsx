@@ -33,11 +33,9 @@ const eventImages = [
 export default function EveryDetailSection() {
   return (
     <section className="bg-black text-white py-16 md:py-24 px-4 md:px-8 relative overflow-hidden">
-      {/* Decorative gradient line */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-teal-400 to-transparent opacity-30"></div>
 
       <div className="max-w-7xl mx-auto">
-        {/* 2x3 Grid Layout - 2 rows, 3 columns */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {eventImages.map((image, index) => (
             <AnimatedSection

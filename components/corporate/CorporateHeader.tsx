@@ -8,7 +8,6 @@ export default function CorporateHeader() {
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    // Trigger animation on mount
     setIsVisible(true);
   }, []);
 

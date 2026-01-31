@@ -111,7 +111,6 @@ export default function ProductionServicesSection() {
                     <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-6">
                       {service.description}
                     </p>
-                    {/* Image Grid - 3 images */}
                     {service.images && service.images.length > 0 && (
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 mt-6">
                         {service.images.map((imageUrl, imgIndex) => (

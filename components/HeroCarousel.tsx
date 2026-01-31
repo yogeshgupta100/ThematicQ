@@ -12,32 +12,31 @@ interface CarouselImage {
   subtitle?: string;
 }
 
-// Default images - replace with your actual images
 const carouselImages: CarouselImage[] = [
   {
     id: 1,
-    src: "/assets/static/Images/Homepage/landingScreen/img1.png",
+    src: "/assets/images/carousel1.png",
     alt: "Modern workspace",
     title: "Precision Crafted.",
     subtitle: "Human Connected. Unforgettable Delivered.",
   },
   {
     id: 2,
-    src: "/assets/static/Images/Homepage/landingScreen/img2.jpg",
+    src: "/assets/images/carousel2.jpg",
     alt: "Business growth",
     title: "We turn your 'What If' into 'What Just Happened'.",
     subtitle: "",
   },
   {
     id: 3,
-    src: "/assets/images/event2.jpg",
+    src: "/assets/images/carousel3.jpg",
     alt: "Team collaboration",
     title: "Turning imagination into experiences",
     subtitle: "that move hearts.",
   },
 ];
 
-const AUTO_SLIDE_INTERVAL = 3000; // 5 seconds
+const AUTO_SLIDE_INTERVAL = 3000;
 
 export default function HeroCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -92,7 +91,6 @@ export default function HeroCarousel() {
     [currentIndex, isAnimating]
   );
 
-  // Auto-slide functionality
   useEffect(() => {
     const interval = setInterval(goToNext, AUTO_SLIDE_INTERVAL);
     return () => clearInterval(interval);
@@ -101,15 +99,12 @@ export default function HeroCarousel() {
   const getSlidePosition = (index: number) => {
     if (index === currentIndex) return "translate-x-0";
 
-    // Calculate the difference to determine slide direction
     const diff = index - currentIndex;
 
     if (direction === "right") {
-      // Moving forward: previous slides go left, next slides come from right
       if (diff < 0) return "-translate-x-full";
       return "translate-x-full";
     } else {
-      // Moving backward: next slides go right, previous slides come from left
       if (diff > 0) return "translate-x-full";
       return "-translate-x-full";
     }
@@ -117,7 +112,6 @@ export default function HeroCarousel() {
 
   return (
     <div ref={heroRef} className="relative w-full h-screen overflow-hidden">
-      {/* Carousel Images */}
       <div
         ref={heroAnimationRef}
         className={`relative w-full h-full transition-all duration-1000 ease-out ${
@@ -145,10 +139,8 @@ export default function HeroCarousel() {
                 className="object-cover"
                 sizes="100vw"
               />
-              {/* Overlay for better text readability - similar to campepicglobal.com */}
               <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60" />
 
-              {/* Content Overlay with refresh animation - text changes with each slide */}
               {isActive && (
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div
@@ -184,7 +176,6 @@ export default function HeroCarousel() {
         })}
       </div>
 
-      {/* Navigation Arrows - styled similar to campepicglobal.com */}
       <button
         onClick={goToPrevious}
         className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-30 bg-white/10 hover:bg-white/20 text-white p-2 md:p-3 rounded-full transition-all duration-300 backdrop-blur-md border border-white/20 hover:border-white/40 group"
@@ -224,8 +215,7 @@ export default function HeroCarousel() {
           />
         </svg>
       </button>
-
-      {/* Dots Indicator - styled similar to campepicglobal.com */}
+        
       <div className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-30 flex gap-2 md:gap-3">
         {carouselImages.map((_, index) => (
           <button

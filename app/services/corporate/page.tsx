@@ -2,11 +2,8 @@ import { Suspense } from "react";
 import CorporateHeader from "@/components/corporate/CorporateHeader";
 import CorporateIntro from "@/components/corporate/CorporateIntro";
 import CorporateSolutions from "@/components/corporate/CorporateSolutions";
-import CoreValues from "@/components/corporate/CoreValues";
 import VisionToLife from "@/components/corporate/VisionToLife";
 import TravelHospitality from "@/components/corporate/TravelHospitality";
-
-// All corporate components are located in @/components/corporate/
 
 export const metadata = {
   title: "Corporate Events - ThematicQ",
@@ -21,7 +18,6 @@ export default async function CorporatePage() {
       </Suspense>
       <CorporateIntro />
       <CorporateSolutions />
-      {/* <CoreValues /> */}
       <VisionToLife />
       <TravelHospitality />
     </main>

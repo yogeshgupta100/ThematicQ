@@ -17,7 +17,6 @@ export default function Navbar({ transparent }: NavbarProps) {
   const [hoverTimeout, setHoverTimeout] = useState<NodeJS.Timeout | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const router = useRouter();
-  // Detect scroll position to change navbar background
   useEffect(() => {
     if (!isHomePage) {
       setIsScrolledPastHero(true);
@@ -25,20 +24,17 @@ export default function Navbar({ transparent }: NavbarProps) {
     }
 
     const handleScroll = () => {
-      // Hero section is full screen (100vh), so check if scrolled past viewport height
       const scrollPosition = window.scrollY;
       const heroHeight = window.innerHeight;
-      setIsScrolledPastHero(scrollPosition > heroHeight - 100); // Add small offset for smoother transition
+      setIsScrolledPastHero(scrollPosition > heroHeight - 100);
     };
 
-    // Check initial scroll position
     handleScroll();
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isHomePage]);
 
-  // Cleanup timeout on unmount
   useEffect(() => {
     return () => {
       if (hoverTimeout) {
@@ -47,7 +43,6 @@ export default function Navbar({ transparent }: NavbarProps) {
     };
   }, [hoverTimeout]);
 
-  // Use prop if provided, otherwise use scroll detection
   const shouldBeTransparent =
     transparent !== undefined ? transparent : isHomePage && !isScrolledPastHero;
 
@@ -87,7 +82,6 @@ export default function Navbar({ transparent }: NavbarProps) {
     >
       <div className="max-w-100vw mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20 md:h-24">
-          {/* Logo Section */}
           <Link
             href="/"
             className="flex items-center gap-2 sm:gap-3 h-full md:gap-4 group z-50"
@@ -108,7 +102,6 @@ export default function Navbar({ transparent }: NavbarProps) {
             </div>
           </Link>
 
-          {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="md:hidden z-50 p-2 text-white hover:text-teal-400 transition-colors"
@@ -138,7 +131,6 @@ export default function Navbar({ transparent }: NavbarProps) {
             </svg>
           </button>
 
-          {/* Desktop Navigation Links */}
           <div className="hidden md:flex items-center gap-6 md:gap-14">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
@@ -181,10 +173,8 @@ export default function Navbar({ transparent }: NavbarProps) {
                     {link.label}
                   </Link>
 
-                  {/* Services Dropdown */}
                   {isServices && isServicesHovered && (
                     <>
-                      {/* Invisible bridge to prevent gap */}
                       <div
                         className="absolute top-full left-0 right-0 h-4 z-50"
                         onMouseEnter={handleMouseEnter}
@@ -234,7 +224,6 @@ export default function Navbar({ transparent }: NavbarProps) {
             })}
           </div>
 
-          {/* Mobile Menu */}
           <div
             className={`fixed top-0 left-0 right-0 bottom-0 bg-black z-40 md:hidden transition-transform duration-300 ${
               isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
@@ -264,7 +253,6 @@ export default function Navbar({ transparent }: NavbarProps) {
                         {link.label}
                       </Link>
 
-                      {/* Mobile Services Dropdown */}
                       {isServices && (
                         <div className="mt-4 space-y-4 pl-4">
                           {servicesItems.map((item, index) => (

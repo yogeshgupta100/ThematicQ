@@ -29,7 +29,6 @@ export default function ServicesSection() {
 
   return (
     <section className="bg-black text-white py-16 md:py-24 px-4 md:px-8 relative overflow-hidden">
-      {/* Decorative gradient line */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-teal-400 to-transparent opacity-30"></div>
 
       <div className="max-w-7xl mx-auto">
@@ -45,7 +44,6 @@ export default function ServicesSection() {
         </AnimatedSection>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start">
-          {/* Services List */}
           <div className="space-y-8">
             {services.map((service, index) => (
               <AnimatedSection
@@ -64,8 +62,7 @@ export default function ServicesSection() {
               </AnimatedSection>
             ))}
           </div>
-
-          {/* Images */}
+            
           <AnimatedSection direction="left" delay={200}>
             <div className="space-y-6">
               <div className="relative w-full h-64 md:h-80 rounded-lg overflow-hidden border border-teal-500/20 hover:border-teal-500/50 transition-all duration-300 group">

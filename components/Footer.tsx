@@ -5,9 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-white py-8 md:py-12 px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
-        {/* Main Footer Content */}
         <div className="flex flex-col lg:flex-row items-start justify-between gap-10 lg:gap-16">
-          {/* Left Section - Logo and Description */}
           <div className="flex flex-col items-start gap-4 max-w-md">
             <Image
               src="/assets/images/logo_color.png"
@@ -20,7 +18,6 @@ export default function Footer() {
               At ThematicQ, each event is an opportunity to narrate a unique story. We combine ideas, people, and brands to craft memorable, inspiring, and connective experiences.
             </p>
             
-            {/* Social Media Icons */}
             <div className="flex items-center gap-4 mt-2">
               <Link
                 href="https://www.linkedin.com/company/thematic-q/"
@@ -58,12 +55,10 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Right Section - Contact Us */}
           <div className="flex flex-col items-start gap-4">
             <h3 className="text-xl font-bold text-[#1a365d]">Contact Us</h3>
             
             <div className="flex flex-col gap-3 text-sm text-gray-700">
-              {/* Phone */}
               <a
                 href="tel:+919599214186"
                 className="flex items-center gap-3 hover:text-[#EBB964] transition-colors"
@@ -74,7 +69,6 @@ export default function Footer() {
                 <span>+918178575159</span>
               </a>
 
-              {/* Email */}
               <a
                 href="mailto:info@thematicq.com"
                 className="flex items-center gap-3 hover:text-[#EBB964] transition-colors"
@@ -85,7 +79,6 @@ export default function Footer() {
                 <span>Info@thematicq.com</span>
               </a>
 
-              {/* Address */}
               <div className="flex items-start gap-3">
                 <svg className="w-5 h-5 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
@@ -96,7 +89,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar */}
         <div className="border-t border-gray-200 mt-8 pt-6">
           <p className="text-center text-sm text-gray-500">
             © {new Date().getFullYear()} ThematicQ. All rights reserved.

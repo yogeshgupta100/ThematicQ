@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import AnimatedSection from "../AnimatedSection";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const portraits = [

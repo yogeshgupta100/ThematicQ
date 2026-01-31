@@ -1,8 +1,7 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useCallback } from "react";
 import Image from "next/image";
-import AnimatedSection from "../AnimatedSection";
 
 const carouselImages = [
   {
@@ -37,8 +36,6 @@ const carouselImages = [
   },
 ];
 
-// Auto-slide disabled - manual navigation only
-
 export default function TravelHospitality() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -71,13 +68,10 @@ export default function TravelHospitality() {
     [currentIndex, isAnimating]
   );
 
-  // Auto-slide functionality disabled - manual navigation only
-
   return (
     <section className="bg-black text-white py-16 md:py-24 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
 
-        {/* Carousel with overlapping images */}
         <div className="relative w-full h-[350px] sm:h-[400px] md:h-[500px] lg:h-[600px] flex items-center justify-center overflow-hidden sm:overflow-visible">
           <div className="relative w-full max-w-6xl mx-auto h-full flex items-center justify-center">
             {carouselImages.map((image, index) => {
@@ -89,20 +83,17 @@ export default function TravelHospitality() {
               const isRight =
                 index === (currentIndex + 1) % carouselImages.length;
 
-              // Calculate positions with overlap - responsive
               let positionClass = "";
               let sizeClass = "";
               let zIndex = "";
               let opacity = "";
 
               if (isCenter) {
-                // On mobile, center image takes more space
                 positionClass = "left-1/2 -translate-x-1/2";
                 sizeClass = "w-[90%] sm:w-[70%] md:w-[55%] lg:w-[45%] h-full";
                 zIndex = "z-20";
                 opacity = "opacity-100";
               } else if (isLeft) {
-                // On mobile, hide side images or show smaller
                 positionClass = "left-0 sm:left-[2%] md:left-[5%] lg:left-[8%]";
                 sizeClass =
                   "hidden sm:block w-[25%] md:w-[32%] lg:w-[28%] h-[80%] sm:h-[85%]";
@@ -116,7 +107,6 @@ export default function TravelHospitality() {
                 zIndex = "z-10";
                 opacity = "opacity-100";
               } else {
-                // Hidden images
                 positionClass =
                   index < currentIndex ? "-left-full" : "right-full";
                 sizeClass = "w-[25%] md:w-[32%] lg:w-[28%] h-[80%] sm:h-[85%]";
@@ -143,7 +133,6 @@ export default function TravelHospitality() {
             })}
           </div>
 
-          {/* Navigation Arrows - Responsive */}
           <button
             onClick={(e) => {
               e.stopPropagation();
@@ -192,7 +181,6 @@ export default function TravelHospitality() {
             </svg>
           </button>
 
-          {/* Dots Indicator - Responsive */}
           <div className="absolute bottom-4 sm:bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-30 flex gap-1.5 sm:gap-2 md:gap-3">
             {carouselImages.map((_, index) => (
               <button

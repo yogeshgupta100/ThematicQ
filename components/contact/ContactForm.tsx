@@ -31,7 +31,6 @@ export default function ContactForm() {
     setIsSubmitting(true);
     setSubmitStatus({ type: null, message: "" });
 
-    // Get access key from environment variable
     const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || "";
 
     if (!accessKey) {
@@ -45,7 +44,6 @@ export default function ContactForm() {
     }
 
     try {
-      // Submit to Web3Forms API
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: {
@@ -101,7 +99,6 @@ export default function ContactForm() {
 
         <AnimatedSection direction="up" delay={200}>
           <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Name Field */}
             <div>
               <label
                 htmlFor="name"
@@ -121,7 +118,6 @@ export default function ContactForm() {
               />
             </div>
 
-            {/* Email Field */}
             <div>
               <label
                 htmlFor="email"
@@ -141,7 +137,6 @@ export default function ContactForm() {
               />
             </div>
 
-            {/* Contact Number Field */}
             <div>
               <label
                 htmlFor="contactNumber"
@@ -161,7 +156,6 @@ export default function ContactForm() {
               />
             </div>
 
-            {/* Subject Field */}
             <div>
               <label
                 htmlFor="subject"
@@ -181,7 +175,6 @@ export default function ContactForm() {
               />
             </div>
 
-            {/* Submit Button */}
             <div className="pt-4">
               <button
                 type="submit"
@@ -192,7 +185,6 @@ export default function ContactForm() {
               </button>
             </div>
 
-            {/* Status Message */}
             {submitStatus.type && (
               <div
                 className={`p-4 rounded-lg ${

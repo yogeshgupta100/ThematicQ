@@ -5,8 +5,6 @@ import FabricationStageSection from "@/components/production/FabricationStageSec
 import ProductionServicesSection from "@/components/production/ProductionServicesSection";
 import WhyChooseProductionSection from "@/components/production/WhyChooseProductionSection";
 
-// All production components are located in @/components/production/
-
 export const metadata = {
   title: "Event Production - ThematicQ",
   description:

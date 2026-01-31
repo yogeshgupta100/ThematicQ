@@ -9,8 +9,8 @@ interface PortfolioItem {
   id: number;
   src: string;
   alt: string;
-  rowSpan: number; // 1 or 2
-  colSpan: number; // 1
+  rowSpan: number;
+  colSpan: number;
   animationDirection: "left" | "right";
 }
 
@@ -61,7 +61,6 @@ function PortfolioCard({ item, index }: PortfolioCardProps) {
 }
 
 export default function PortfolioSection() {
-  // Portfolio items with layout configuration
   const portfolioItems: PortfolioItem[] = [
     {
       id: 1,
@@ -187,7 +186,6 @@ export default function PortfolioSection() {
 
   return (
     <section className="bg-black text-white py-16 md:py-24 px-4 md:px-8 relative overflow-hidden">
-      {/* Decorative gradient line */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-teal-400 to-transparent opacity-30"></div>
 
       <div className="mx-auto">
@@ -211,7 +209,6 @@ export default function PortfolioSection() {
           </p>
         </AnimatedSection>
 
-        {/* Portfolio Grid - 2 columns with masonry layout */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 auto-rows-[300px]">
           {portfolioItems.map((item, index) => (
             <PortfolioCard key={item.id} item={item} index={index} />

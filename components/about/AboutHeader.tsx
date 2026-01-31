@@ -5,7 +5,6 @@ import { useRef } from "react";
 
 export default function AboutHeader() {
   const titleRef = useRef<HTMLHeadingElement>(null);
-  const subtitleRef = useRef<HTMLParagraphElement>(null);
   const { ref: titleAnimationRef, isVisible: titleVisible } =
     useScrollAnimation({ threshold: 0.2 });
   const { ref: subtitleAnimationRef, isVisible: subtitleVisible } =

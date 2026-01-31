@@ -113,7 +113,6 @@ export default function CorporateSolutions() {
                   <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-6">
                     {solution.description}
                   </p>
-                  {/* Image Grid - 3 images */}
                   {solution.images && solution.images.length > 0 && (
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 mt-6">
                       {solution.images.map((imageUrl, imgIndex) => (

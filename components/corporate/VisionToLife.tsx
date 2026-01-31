@@ -1,6 +1,5 @@
 "use client";
 
-import { title } from "process";
 import AnimatedSection from "../AnimatedSection";
 
 const processSteps = [
