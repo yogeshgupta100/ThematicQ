@@ -26,7 +26,7 @@ export default function AboutIntro() {
         >
           <div
             ref={parallaxRef}
-            className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-lg overflow-hidden mb-8 md:mb-12 border border-teal-500/20"
+            className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-lg overflow-hidden mb-8 md:mb-12 border border-500/20 bor-yellow-hoeffer"
             style={{ transform: `translateY(${offset}px)` }}
           >
             <Image

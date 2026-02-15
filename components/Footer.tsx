@@ -8,11 +8,11 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row items-start justify-between gap-10 lg:gap-16">
           <div className="flex flex-col items-start gap-4 max-w-md">
             <Image
-              src="/assets/images/logo_color.png"
+              src="/assets/images/thematic-logo.webp"
               alt="ThematicQ Logo"
-              width={180}
-              height={60}
-              className="h-16 w-auto object-cover"
+              width={280}
+              height={100}
+              className="h-26 w-auto object-cover flogo"
             />
             <p className="text-sm text-gray-600 leading-relaxed">
               At ThematicQ, each event is an opportunity to narrate a unique story. We combine ideas, people, and brands to craft memorable, inspiring, and connective experiences.
@@ -85,15 +85,22 @@ export default function Footer() {
                 </svg>
                 <span>B29 Jeevan park Uttam nagar, New Delhi</span>
               </div>
+
+                  <div className="flex items-start gap-3">
+           
+                     © {new Date().getFullYear()} ThematicQ. All rights reserved.
+              </div>
+
+        
             </div>
           </div>
         </div>
 
-        <div className="border-t border-gray-200 mt-8 pt-6">
+        {/* <div className="border-t border-gray-200 mt-8 pt-6">
           <p className="text-center text-sm text-gray-500">
-            © {new Date().getFullYear()} ThematicQ. All rights reserved.
+           
           </p>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

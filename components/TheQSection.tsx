@@ -1,16 +1,38 @@
 "use client";
-
+import Image from "next/image";
 import AnimatedSection from "./AnimatedSection";
+
 
 export default function TheQSection() {
   return (
     <section className="bg-black text-white py-16 md:py-24 px-4 md:px-8 relative overflow-hidden">
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-teal-400 rounded-full blur-3xl"></div>
+        <div className="absolute top-20 left-10 w-72 h-72 bg-yellow-400 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-teal-400 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+
+      <div className="imglebxe max-w-7xl mx-auto">
+        <div className="container mx-auto">
+    <Image
+              src="/assets/images/why-img.webp"
+              alt="ThematicQ Logo"
+              width={480}
+              height={480}
+              className="wi50"
+            />
+
+            <div className="rightonct">
+<h4 className="tetext-2xl md:text-3xl lg:text-4xl font-medium">Why us?</h4>
+<p>When you work with ThematicQ, you aren&apos;t hiring a coordinator; you are partnering with a team that views your event as a living, breathing narrative. We don&apos;t just fill a room; we <span> create a moment</span> in time that stays with people long after the lights go down.</p>
+
+            </div>
+
+            
+</div>
+      </div>
+
+      <div className="max-w-7xl mx-auto relative z-10 hidden">
         <AnimatedSection direction="fade" delay={0}>
           <div className="text-center mb-16">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-medium mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">

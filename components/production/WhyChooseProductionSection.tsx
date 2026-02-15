@@ -33,7 +33,7 @@ function AdvantageImageCard({
   return (
     <div
       ref={ref}
-      className={`relative aspect-square rounded-lg overflow-hidden border border-gray-800 hover:border-teal-500/50 transition-all duration-500 group cursor-pointer ${
+      className={`relative aspect-square rounded-lg overflow-hidden border bor-yellow-hoeffer  border-800 hover:border-500/50 transition-all duration-500 group cursor-pointer ${
         isVisible
           ? "translate-y-0 opacity-100 scale-100"
           : "translate-y-12 opacity-0 scale-95"
@@ -47,7 +47,7 @@ function AdvantageImageCard({
         className="object-cover transition-transform duration-700 group-hover:scale-110"
         sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
       />
-      <div className="absolute inset-0 bg-gradient-to-br from-teal-500/20 via-transparent to-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/20 via-transparent to-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
     </div>
   );
 }
@@ -79,8 +79,8 @@ export default function WhyChooseProductionSection() {
 
         <div className="space-y-8 md:space-y-10 mb-12">
           <AnimatedSection direction="up" delay={300}>
-            <div className="bg-gray-900 p-6 md:p-8 rounded-lg border border-gray-800 hover:border-teal-500 transition-all duration-300 group hover:shadow-lg hover:shadow-teal-500/20 hover:-translate-y-2">
-              <h3 className="text-base md:text-lg font-medium mb-3 text-teal-400 group-hover:text-teal-300 transition-colors">
+            <div className="bg-gray-900 p-6 md:p-8 rounded-lg border border-800 hover:border-500 bor-yellow-hoeffer  transition-all duration-300 group hover:shadow-lg hover:shadow-teal-500/20 hover:-translate-y-2">
+              <h3 className="text-base md:text-lg font-medium mb-3 text-400 group-hover:text-300 text-yelow transition-colors">
                 Creative and Technical Mastery
               </h3>
               <p className="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors">
@@ -94,8 +94,8 @@ export default function WhyChooseProductionSection() {
           </AnimatedSection>
 
           <AnimatedSection direction="up" delay={400}>
-            <div className="bg-gray-900 p-6 md:p-8 rounded-lg border border-gray-800 hover:border-teal-500 transition-all duration-300 group hover:shadow-lg hover:shadow-teal-500/20 hover:-translate-y-2">
-              <h3 className="text-base md:text-lg font-medium mb-3 text-teal-400 group-hover:text-teal-300 transition-colors">
+            <div className="bg-gray-900 p-6 md:p-8 rounded-lg border border-800 bor-yellow-hoeffer  hover:border-500 transition-all duration-300 group hover:shadow-lg hover:shadow-teal-500/20 hover:-translate-y-2">
+              <h3 className="text-base md:text-lg font-medium mb-3 text-400 group-hover:text-300 transition-colors text-yelow"  >
                 Experienced Production Team
               </h3>
               <p className="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors">
@@ -108,8 +108,8 @@ export default function WhyChooseProductionSection() {
           </AnimatedSection>
 
           <AnimatedSection direction="up" delay={500}>
-            <div className="bg-gray-900 p-6 md:p-8 rounded-lg border border-gray-800 hover:border-teal-500 transition-all duration-300 group hover:shadow-lg hover:shadow-teal-500/20 hover:-translate-y-2">
-              <h3 className="text-base md:text-lg font-medium mb-3 text-teal-400 group-hover:text-teal-300 transition-colors">
+            <div className="bg-gray-900 p-6 md:p-8 rounded-lg border border-800 hover:border--500 bor-yellow-hoeffer transition-all duration-300 group hover:shadow-lg hover:shadow-teal-500/20 hover:-translate-y-2">
+              <h3 className="text-base md:text-lg font-medium mb-3 text-400 group-:text-teal-300 transition-colors text-yelow">
                 In-House Fabrication and Equipment
               </h3>
               <p className="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors">

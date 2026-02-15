@@ -43,7 +43,7 @@ function ShowcaseCard({
       }`}
       style={{ transitionDelay: `${index * 100}ms` }}
     >
-      <div className="relative aspect-square rounded-lg overflow-hidden border border-gray-800 hover:border-teal-500/50 transition-all duration-500 cursor-pointer">
+      <div className="relative aspect-square rounded-lg overflow-hidden border border-800 hover:border-500/50 transition-all duration-500 cursor-pointer bor-yellow-hoeffer   ">
         <Image
           src={item.src}
           alt={item.alt}

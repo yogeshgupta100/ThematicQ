@@ -58,7 +58,7 @@ export default function VisionToLife() {
           {processSteps.map((step, index) => (
             <AnimatedSection key={index} direction="left" delay={index * 100}>
               <div className="flex gap-6 md:gap-8 items-start">
-                <div className="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 rounded-full bg-teal-500 flex items-center justify-center">
+                <div className="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 rounded-full bg-500  bgyllow flex items-center justify-center">
                   <span className="text-xl md:text-2xl font-bold text-black">
                     {step.number}
                   </span>

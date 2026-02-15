@@ -76,11 +76,11 @@ export default function Navbar({ transparent }: NavbarProps) {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 font-montserrat ${
+      className={`fixed  top-0 left-0 right-0 z-50 transition-all duration-300 font-montserrat ${
         shouldBeTransparent ? "bg-transparent backdrop-blur-sm" : "bg-black"
       }`}
     >
-      <div className="max-w-100vw mx-auto px-4 md:px-8">
+      <div className="max-w-100vw  max-w-7xl mx-auto mx-auto  ">
         <div className="flex items-center justify-between h-16 sm:h-20 md:h-24">
           <Link
             href="/"
@@ -90,9 +90,9 @@ export default function Navbar({ transparent }: NavbarProps) {
               router.push("/");
             }}
           >
-            <div className="relative h-full w-auto min-w-[100px] sm:min-w-[120px] md:min-w-[150px] mt-[12px] sm:mt-[16px]">
+            <div className="relative toplogobx h-full w-auto min-w-[100px] sm:min-w-[120px] md:min-w-[600px] mt-[12px] sm:mt-[0px]">
               <Image
-                src="/assets/images/logo_white.png"
+                src="/assets/images/logo_white.webp"
                 alt="ThematicQ Logo"
                 fill
                 className="object-cover object-left"
@@ -104,7 +104,7 @@ export default function Navbar({ transparent }: NavbarProps) {
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden z-50 p-2 text-white hover:text-teal-400 transition-colors"
+            className="md:hidden z-50 p-2 text-white hover:text-400 text-yelow-hor transition-colors"
             aria-label="Toggle menu"
           >
             <svg
@@ -166,8 +166,8 @@ export default function Navbar({ transparent }: NavbarProps) {
                     href={link.href === "/services" ? "" : link.href}
                     className={`text-sm md:text-2xl font-medium transition-colors duration-200 ${
                       isActive
-                        ? "text-teal-400"
-                        : "text-white hover:text-teal-400"
+                        ? "text-400 text-yelow"
+                        : "text-white hover:text-400 text-yelow-hor"
                     }`}
                   >
                     {link.label}
@@ -185,7 +185,7 @@ export default function Navbar({ transparent }: NavbarProps) {
                         onMouseLeave={handleMouseLeave}
                       >
                         <div className="w-full px-4 md:px-8">
-                          <div className="bg-black border border-teal-500/30 rounded-lg overflow-hidden shadow-2xl max-w-7xl mx-auto">
+                          <div className="bg-black border border-500/30 bor-yellow  rounded-lg overflow-hidden shadow-2xl max-w-7xl mx-auto">
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
                               {servicesItems.map((item, index) => (
                                 <Link
@@ -203,7 +203,7 @@ export default function Navbar({ transparent }: NavbarProps) {
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
                                     <div className="absolute inset-0 flex flex-col justify-end p-4 md:p-6">
-                                      <h3 className="text-sm md:text-base font-medium text-white mb-2 group-hover:text-teal-400 transition-colors">
+                                      <h3 className="text-sm md:text-base font-medium text-white mb-2 group-hover:text-400 text-yelow-hor transition-colors">
                                         {item.title}
                                       </h3>
                                       <p className="text-sm md:text-base text-gray-300 leading-relaxed">
@@ -262,7 +262,7 @@ export default function Navbar({ transparent }: NavbarProps) {
                               onClick={() => setIsMobileMenuOpen(false)}
                               className="block group"
                             >
-                              <div className="relative h-32 rounded-lg overflow-hidden border border-teal-500/20">
+                              <div className="relative h-32 rounded-lg overflow-hidden border bor-yellow border-500/20">
                                 <Image
                                   src={item.image}
                                   alt={item.title}

@@ -48,7 +48,7 @@ function ValueItem({ value, index, animationDirection }: ValueItemProps) {
         className="flex gap-6 md:gap-8 items-start"
         style={{ transform: `translateY(${itemOffset}px)` }}
       >
-        <div className="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 rounded-full bg-teal-500 flex items-center justify-center">
+        <div className="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 rounded-full bgyllow bg-500 flex items-center justify-center">
           <span className="text-xl md:text-2xl font-bold text-black">
             {index + 1}
           </span>

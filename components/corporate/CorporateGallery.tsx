@@ -26,7 +26,7 @@ export default function CorporateGallery() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {galleryImages.map((image, index) => (
               <AnimatedSection key={index} direction="up" delay={index * 150}>
-                <div className="relative aspect-[3/4] rounded-lg overflow-hidden border border-teal-500/20 hover:border-teal-500/50 transition-all duration-300 group">
+                <div className="relative aspect-[3/4] rounded-lg overflow-hidden border border-500/20 hover:border-500/50 transition-all duration-300 group">
                   <Image
                     src={image.src}
                     alt={image.alt}

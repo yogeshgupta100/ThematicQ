@@ -31,7 +31,7 @@ export default function CuratorsSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           <AnimatedSection direction="left" delay={400}>
-            <div className="relative aspect-video rounded-lg overflow-hidden border border-gray-800 hover:border-teal-500/50 transition-all duration-500 group">
+            <div className="relative aspect-video rounded-lg overflow-hidden border border-800 bor-yellow-hoeffer hover:border-500/50 transition-all duration-500 group">
               <Image
                 src="/assets/static/Images/Themes/images/small/img7.jpg"
                 alt="Energetic party scene with masks and dynamic lighting"
@@ -44,7 +44,7 @@ export default function CuratorsSection() {
           </AnimatedSection>
 
           <AnimatedSection direction="right" delay={600}>
-            <div className="relative aspect-video rounded-lg overflow-hidden border border-gray-800 hover:border-teal-500/50 transition-all duration-500 group">
+            <div className="relative aspect-video rounded-lg overflow-hidden border border-800 hover:border-500/50 bor-yellow-hoeffer transition-all duration-500 group">
               <Image
                 src="/assets/static/Images/Themes/images/small/img8.jpg"
                 alt="Vibrant colorful party setup with decorations"

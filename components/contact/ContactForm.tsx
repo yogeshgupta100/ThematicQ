@@ -104,7 +104,7 @@ export default function ContactForm() {
                 htmlFor="name"
                 className="block text-sm font-medium text-gray-300 mb-2"
               >
-                Name <span className="text-teal-400">*</span>
+                Name <span className="text-teal-400 text-yelow">*</span>
               </label>
               <input
                 type="text"
@@ -113,7 +113,7 @@ export default function ContactForm() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/20 transition-all duration-300"
+                className="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-500  focus:ring-2 text-yelow-hord transition-all duration-300"
                 placeholder="Enter your full name"
               />
             </div>
@@ -123,7 +123,7 @@ export default function ContactForm() {
                 htmlFor="email"
                 className="block text-sm font-medium text-gray-300 mb-2"
               >
-                Email <span className="text-teal-400">*</span>
+                Email <span className="text-400 text-yelow">*</span>
               </label>
               <input
                 type="email"
@@ -132,7 +132,7 @@ export default function ContactForm() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/20 transition-all duration-300"
+                className="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-500  focus:ring-2 text-yelow-hord transition-all duration-300"
                 placeholder="Enter your email address"
               />
             </div>
@@ -142,7 +142,7 @@ export default function ContactForm() {
                 htmlFor="contactNumber"
                 className="block text-sm font-medium text-gray-300 mb-2"
               >
-                Contact Number <span className="text-teal-400">*</span>
+                Contact Number <span className="text-400 text-yelow">*</span>
               </label>
               <input
                 type="tel"
@@ -151,7 +151,7 @@ export default function ContactForm() {
                 value={formData.contactNumber}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/20 transition-all duration-300"
+                className="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-500  focus:ring-2 text-yelow-hord transition-all duration-300"
                 placeholder="Enter your contact number"
               />
             </div>
@@ -161,7 +161,7 @@ export default function ContactForm() {
                 htmlFor="subject"
                 className="block text-sm font-medium text-gray-300 mb-2"
               >
-                Subject <span className="text-teal-400">*</span>
+                Subject <span className="text-400 text-yelow">*</span>
               </label>
               <input
                 type="text"
@@ -170,7 +170,7 @@ export default function ContactForm() {
                 value={formData.subject}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/20 transition-all duration-300"
+                className="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-500 focus:ring-2 text-yelow-hord transition-all duration-300"
                 placeholder="What is your inquiry about?"
               />
             </div>
@@ -179,7 +179,7 @@ export default function ContactForm() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full px-8 py-4 text-lg font-semibold border-2 border-teal-500 text-white rounded-lg hover:bg-teal-500 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-transparent"
+                className="w-full px-8 py-4 text-lg font-semibold border-2 border-500 bor-yellow bgyllow-hor text-white rounded-lg hover:bg-500 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-transparent"
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
               </button>

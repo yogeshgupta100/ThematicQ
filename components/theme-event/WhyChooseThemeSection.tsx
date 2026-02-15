@@ -51,8 +51,8 @@ export default function WhyChooseThemeSection() {
         <div className="space-y-6 md:space-y-8">
           {reasons.map((reason, index) => (
             <AnimatedSection key={index} direction="up" delay={index * 100}>
-              <div className="bg-gray-900 p-6 md:p-8 rounded-lg border border-gray-800 hover:border-teal-500 transition-all duration-300 group hover:shadow-lg hover:shadow-teal-500/20 hover:-translate-y-2">
-                <h3 className="text-base md:text-lg font-medium mb-3 text-teal-400 group-hover:text-teal-300 transition-colors">
+              <div className="bg-gray-900 p-6 md:p-8 rounded-lg border border-800 bor-yellow-hoeffer hover:border-500 transition-all duration-300 group hover:shadow-lg hover:shadow-teal-500/20 hover:-translate-y-2">
+                <h3 className="text-base text-yelow md:text-lg font-medium mb-3 text-400 group-hover:text-teal-300 transition-colors">
                   {reason.title}
                 </h3>
                 <p className="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors">

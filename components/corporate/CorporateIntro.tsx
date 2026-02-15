@@ -28,7 +28,7 @@ function ImageCard({ item, index, aspectRatio = "square" }: ImageCardProps) {
       ref={animationRef}
       className={`relative ${
         aspectRatio === "square" ? "aspect-square" : "aspect-video"
-      } rounded-lg overflow-hidden border border-teal-500/20 hover:border-teal-500/50 transition-all duration-500 group cursor-pointer ${
+      } rounded-lg overflow-hidden border border-500/20 bor-yellow-hoeffer bg-cover  hover:border-500/50 transition-all duration-500 group cursor-pointer ${
         isVisible
           ? "translate-x-0 opacity-100"
           : item.animationDirection === "left"
@@ -55,7 +55,7 @@ function ImageCard({ item, index, aspectRatio = "square" }: ImageCardProps) {
               : "(max-width: 768px) 100vw, 50vw"
           }
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-teal-500/20 via-transparent to-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/20 via-transparent to-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
     </div>
   );
@@ -128,7 +128,7 @@ export default function CorporateIntro() {
             <p className="text-lg md:text-xl text-gray-300 max-w-7xl mx-auto leading-relaxed">
               For us, the method is straightforward: effective collaboration,
               innovative planning, and flawless execution. At ThematicQ, we
-              don’t just promise an event; we deliver an experience, maintaining
+              don&apos;t just promise an event; we deliver an experience, maintaining
               the flow and easing uncertainty for a memorable time with family
               and friends.
             </p>

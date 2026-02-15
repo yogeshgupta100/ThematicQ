@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/***
+font-family: "Oswald", sans-serif;
+font-family: "Poppins", sans-serif;
+****/
+
 :root {
   --background: #000000;
   --foreground: #ffffff;
@@ -70,10 +77,85 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #14b8a6;
+  background: #EBB964;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #0d9488;
+  background: #EBB964;
+}
+
+/*****custem css****/
+.slidertxt {font-family: "Oswald", sans-serif;  font-weight: 800; text-transform: uppercase;  max-width: 100%; color: #fff;  }
+.text-left.text-white { width: 90% !important; text-align: left;}
+.slidertxt  span.text-yellow-400 {color:#ebb964}
+.max-wde { max-width: 1150px; width: 90%; text-align: left; margin: 0 auto;}
+
+.rightonct {
+    display: inline-block;
+    width: 56%;
+    vertical-align: middle;
+}
+.rightonct h4{
+    margin-bottom: 33px;
+    font-size: 56px;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+}
+
+.rightonct p {
+    font-size: 22px;
+}
+
+img.wi50 {
+    display: inline-block;
+    margin: 0 52px 0 0;
+}
+
+.rightonct p span{color:#ebb964}
+
+.bgyllow{background: #ebb964 !important;}
+.bgyllow-hor:hover {background: #ebb964}
+.text-yelow {color: #ebb964 !important;}
+.text-yelow-hor:hover {color: #ebb964 !important;}
+.bor-yellow {border-color: #ebb964 !important;}
+.bor-yellow-hoeffer {border-color: #403d37 !important;}
+.bor-yellow-hoeffer:hover{border-color: #ebb964 !important;}
+.text-ylow800 {color: #ebb964 !important; opacity: 0.4;}
+
+.text-yelow-hord:focus {border-color: #ebb964 !important;}
+
+.toplogobx img {
+    position: absolute;
+    height: auto;
+    inset: 0px;
+    color: transparent;
+    object-fit: contain;
+    margin: 0;
+}
+
+.flogo, .toplogobx img { width: 250px !important;}
+
+	@media screen and (max-width:641px) {
+.toplogobx img {
+    width: 135px !important;
+    margin: -6px 0 0 14px;
+}
+.flogo {    width: 114px !important;}
+.rightonct {
+    display: block;
+    width: 100%;
+    vertical-align: top;
+    margin: 22px 0 0 0;
+}
+.rightonct h4 {
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+.rightonct p {
+    font-size: 16px;
+}
+.pt-20.px-4.pb-8.h-full.overflow-y-auto{    min-height: 400px;
+    background: #000;
+    height: 100vh;}
 }

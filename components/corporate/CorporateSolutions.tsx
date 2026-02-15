@@ -101,7 +101,7 @@ export default function CorporateSolutions() {
           {solutions.map((solution, index) => (
             <AnimatedSection key={index} direction="right" delay={index * 100}>
               <div className="flex gap-6 md:gap-8 items-start">
-                <div className="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 rounded-full bg-teal-500 flex items-center justify-center">
+                <div className="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 rounded-full bg-500 bgyllow flex items-center justify-center">
                   <span className="text-xl md:text-2xl font-bold text-black">
                     {solution.number}
                   </span>
@@ -118,13 +118,13 @@ export default function CorporateSolutions() {
                       {solution.images.map((imageUrl, imgIndex) => (
                         <div
                           key={imgIndex}
-                          className="relative aspect-[4/3] rounded-lg overflow-hidden border border-teal-500/20 hover:border-teal-500/50 transition-all duration-300 group"
+                          className="relative aspect-[4/3] rounded-lg overflow-hidden border border-500/20 hover:border-500/50 bor-yellow-hoeffer transition-all duration-300 group"
                         >
                           <Image
                             src={imageUrl}
                             alt={`${solution.title} - Image ${imgIndex + 1}`}
                             fill
-                            className="object-cover transition-transform duration-700 group-hover:scale-110"
+                            className="object-cover transition-transform duration-700 group-hover:scale-110 bor-yellow"
                             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                           />
                           <div className="absolute inset-0 bg-gradient-to-br from-teal-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

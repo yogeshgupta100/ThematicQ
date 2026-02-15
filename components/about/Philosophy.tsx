@@ -40,7 +40,7 @@ function QFactorItem({ factor, index }: QFactorItemProps) {
         className="flex gap-6 md:gap-8 items-start"
         style={{ transform: `translateY(${itemOffset}px)` }}
       >
-        <div className="flex-shrink-0 w-16 h-16 md:w-20 md:h-20 rounded-full bg-teal-500 flex items-center justify-center">
+        <div className="flex-shrink-0 w-16 h-16 md:w-20 md:h-20 rounded-full bg-500 bgyllow flex items-center justify-center">
           <span className="text-3xl md:text-4xl font-bold text-black">
             {factor.letter}
           </span>

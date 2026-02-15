@@ -80,12 +80,12 @@ export default function ThemeSolutionsSection() {
               <div className="max-w-5xl mx-auto">
                 <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
                   <div className="flex-shrink-0">
-                    <span className="text-6xl md:text-7xl font-bold text-teal-500/30">
+                    <span className="text-6xl md:text-7xl font-bold text-ylow800 text-500/30">
                       {service.number}
                     </span>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-lg md:text-xl font-medium mb-4 text-teal-400">
+                    <h3 className="text-lg md:text-xl font-medium mb-4 text-400 text-yelow">
                       {service.title}
                     </h3>
                     <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-6">
@@ -96,7 +96,7 @@ export default function ThemeSolutionsSection() {
                         {service.images.map((imageUrl, imgIndex) => (
                           <div
                             key={imgIndex}
-                            className="relative aspect-[4/3] rounded-lg overflow-hidden border border-teal-500/20 hover:border-teal-500/50 transition-all duration-300 group"
+                            className="relative aspect-[4/3] rounded-lg overflow-hidden border border-500/20 bor-yellow-hoeffer hover:border-500/50 transition-all duration-300 group"
                           >
                             <Image
                               src={imageUrl}
