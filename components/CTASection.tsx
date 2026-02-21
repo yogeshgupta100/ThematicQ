@@ -21,7 +21,7 @@ export default function CTASection() {
 
       <div className="clodog">     <div className="max-w-7xl mx-auto text-center relative z-10">
 
-        <div class=""><h2 class="text-2xl md:text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center text-white"> Our Partners </h2></div>
+        <div className=""><h2 className="text-2xl md:text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center text-white"> Our Partners </h2></div>
         <ul>
 <li> 
     <Image
