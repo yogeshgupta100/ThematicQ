@@ -20,7 +20,7 @@ export default function TheQSection() {
      <AnimatedSection direction="fade" delay={300}>
 <div className="namecont">
 <h6 className="minhead yellow-color ">Why us?</h6>
-<p>When you work with ThematicQ, you aren&apos;t hiring a coordinator; you are partnering with a team that views your event as a living, breathing narrative. We don&apos;t just fill a room; <span className="yellocore yellow-color ">we create a moment</span> in time that stays with people long after the lights go down.</p>
+<p>When you work with ThematicQ, you aren't hiring a coordinator; you are partnering with a team that views your event as a living, breathing narrative. We don't just fill a room; <span className="yellocore yellow-color ">we create a moment</span> in time that stays with people long after the lights go down.</p>
 
 </div></AnimatedSection>
 

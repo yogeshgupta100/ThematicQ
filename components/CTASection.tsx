@@ -1,6 +1,7 @@
 "use client";
 
 import AnimatedSection from "./AnimatedSection";
+import Image from 'next/image'
 
 export default function CTASection() {
   return (
@@ -17,6 +18,90 @@ export default function CTASection() {
           </button>
         </AnimatedSection>
       </div>
+
+      <div className="clodog">     <div className="max-w-7xl mx-auto text-center relative z-10">
+
+        <div class=""><h2 class="text-2xl md:text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center text-white"> Our Partners </h2></div>
+        <ul>
+<li> 
+    <Image
+      src="/assets/static/Images/Homepage/logos/1.webp"
+      width={500}
+      height={500}
+      alt="Picture of the author"
+    />  
+</li>
+
+
+<li> 
+    <Image
+      src="/assets/static/Images/Homepage/logos/3.webp"
+      width={500}
+      height={500}
+      alt="Picture of the author"
+    />  
+</li>
+
+<li> 
+    <Image
+      src="/assets/static/Images/Homepage/logos/4.webp"
+      width={500}
+      height={500}
+      alt="Picture of the author"
+    />  
+</li>
+
+<li> 
+    <Image
+      src="/assets/static/Images/Homepage/logos/5.webp"
+      width={500}
+      height={500}
+      alt="Picture of the author"
+    />  
+</li>
+
+<li> 
+    <Image
+      src="/assets/static/Images/Homepage/logos/6.webp"
+      width={500}
+      height={500}
+      alt="Picture of the author"
+    />  
+</li>
+
+
+
+<li> 
+    <Image
+      src="/assets/static/Images/Homepage/logos/8.webp"
+      width={500}
+      height={500}
+      alt="Picture of the author"
+    />  
+</li>
+
+<li> 
+    <Image
+      src="/assets/static/Images/Homepage/logos/9.webp"
+      width={500}
+      height={500}
+      alt="Picture of the author"
+    />  
+</li>
+
+
+
+<li> 
+    <Image
+      src="/assets/static/Images/Homepage/logos/11.webp"
+      width={500}
+      height={500}
+      alt="Picture of the author"
+    />  
+</li>
+
+        </ul>
+        </div></div>
     </section>
   );
 }

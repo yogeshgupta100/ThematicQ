@@ -134,7 +134,15 @@ img.wi50 {
     margin: 0;
 }
 
-.flogo, .toplogobx img { width: 250px !important;}
+.flogo, .toplogobx img {
+    width: 220px !important;
+}
+.clodog ul li  {
+    display: inline-block;
+    vertical-align: top;
+    width: 11%;
+    margin: 5px;
+}
 
 	@media screen and (max-width:641px) {
 .toplogobx img {
@@ -158,4 +166,12 @@ img.wi50 {
 .pt-20.px-4.pb-8.h-full.overflow-y-auto{    min-height: 400px;
     background: #000;
     height: 100vh;}
+
+    .clodog ul li  {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin: 5px;
 }
+}
+

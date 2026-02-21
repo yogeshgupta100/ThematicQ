@@ -107,21 +107,21 @@ const teamMembers: TeamMember[] = [
     role: "Head of Client Service",
     image: "/assets/images/Danish.jpeg",
     description:
-      "Danish is a South Asia-based multimedia journalist with a passion for visual storytelling, focusing on crucial issues. His extensive experience as a producer and independent journalist has allowed him to contribute to prominent media outlets, including The Guardian, Al Jazeera, The Wire, Business Insider, EuroNews, Vice, and TIME magazine. Danish's expertise in filming, editing, and reporting not only ensures the creation of impactful content but also enriches the narrative of events managed by our company. His ability to capture and convey significant social narratives enhances event experiences, engages audiences, and fortifies the thematic elements of various occasions.",
+      "Danish is a South Asia-based multimedia journalist with a passion for visual storytelling. He has contributed to <strong>The Guardian</strong>, <strong>Al Jazeera</strong>, and <b>TIME Magazine</b>. His expertise in filming, editing, and reporting ensures the creation of impactful and immersive event narratives.",
   },
   {
     name: "Ravish Ahmad",
-    role: "Director",
+    role: "Operations, Production & Execution",
     image: "/assets/images/Ravish.jpeg",
     description:
-      "Ravish Ahmad, an event professional with over a decade of experience creating impactful, well-executed events. From large-scale productions to premium private experiences, he leads with creativity, precision, and strong execution. He believes great events aren’t just organized — they’re strategically crafted, flawlessly managed, and remembered long after they end.",
+      "With over a decade of experience, Ravish creates <strong>impactful, well-executed events</strong>. He believes great events aren’t just organized — they are <b>strategically crafted</b>, flawlessly managed, and remembered long after they end.",
   },
   {
     name: "Manvi Jauhari",
     role: "Creative Director",
     image: "/assets/images/manvi.jpg",
     description:
-      "Manvi is currently pursuing a Master's of Science in Marketing at Hong Kong University of Science and Technology. With a dynamic background in event management, marketing, communications, and journalism, she excels in orchestrating seamless events while implementing comprehensive 360 marketing strategies. Her skills in optimizing workflows not only enhance operational efficiency but also ensure that every aspect of event planning and execution aligns with overarching marketing objectives. Holding a Post Graduation Diploma in Multimedia Journalism and a Bachelor's in Physics with a minor in Positive Psychology, Manvi brings a unique blend of analytical and creative skills.",
+      "Manvi specializes in <strong>360° marketing strategies</strong> and seamless event execution. With expertise in journalism and analytics, she blends <b>creativity and precision</b> to deliver high-performance campaigns.",
   },
 ];
 

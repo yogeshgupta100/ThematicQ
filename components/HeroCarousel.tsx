@@ -177,7 +177,7 @@ export default function HeroCarousel() {
                     }}
                   >
                     {image.title && (
-                      <h1 className="slidertxt max-w-4xl text-2xl sm:text-3xl md:text-4xl lg:text-9xl font-medium mb-4 md:mb-6">
+                      <h1 className="slidertxt max-w-4xl text-3xl sm:text-3xl md:text-6xl lg:text-7xl font-medium mb-4 md:mb-6">
                         <span
                           dangerouslySetInnerHTML={{
                             __html: image.title,
