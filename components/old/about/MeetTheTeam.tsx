@@ -25,9 +25,7 @@ function TeamMemberCard({ member, index }: TeamMemberCardProps) {
     <div
       ref={animationRef}
       className={`flex flex-col transition-all duration-700 ${
-        isVisible
-          ? "translate-y-0 opacity-100"
-          : "translate-y-12 opacity-0"
+        isVisible ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
       }`}
       style={{
         transitionDelay: `${index * 150}ms`,
@@ -71,7 +69,7 @@ const teamMembers: TeamMember[] = [
     name: "Manvi Jauhari",
     image: "/assets/images/manvi.jpg",
     description:
-      "Manvi is currently pursuing a Master's of Science in Marketing at Hong Kong University of Science and Technology. With a dynamic background in event management, marketing, communications, and journalism, she excels in orchestrating seamless events while implementing comprehensive 360 marketing strategies. Her skills in optimizing workflows not only enhance operational efficiency but also ensure that every aspect of event planning and execution aligns with overarching marketing objectives. Holding a Post Graduation Diploma in Multimedia Journalism and a Bachelor's in Physics with a minor in Positive Psychology, Manvi brings a unique blend of analytical and creative skills.",
+      "Manvi is currently pursuing a Master's of Science in Marketing at Hong Kong University of Science and Technology. With a dynamic background in Project Management, marketing, communications, and journalism, she excels in orchestrating seamless events while implementing comprehensive 360 marketing strategies. Her skills in optimizing workflows not only enhance operational efficiency but also ensure that every aspect of event planning and execution aligns with overarching marketing objectives. Holding a Post Graduation Diploma in Multimedia Journalism and a Bachelor's in Physics with a minor in Positive Psychology, Manvi brings a unique blend of analytical and creative skills.",
   },
 ];
 
@@ -85,10 +83,20 @@ export default function MeetTheTeam() {
           </h2>
           <div className="space-y-4 text-base md:text-lg text-gray-300 leading-relaxed max-w-5xl mb-16">
             <p>
-              Visionaries, strategists, and builders, we work together to turn moments into history. Every ThematicQ Creation is a Story, and we work together to animate and bring it to Life. Every member is specialised and devoted to various aspects, including resource and creative production, design, event management, and working narratively with visuals.
+              Visionaries, strategists, and builders, we work together to turn
+              moments into history. Every ThematicQ Creation is a Story, and we
+              work together to animate and bring it to Life. Every member is
+              specialised and devoted to various aspects, including resource and
+              creative production, design, event management, and working
+              narratively with visuals.
             </p>
             <p>
-              Across the various aspects, every resource and technical resource is devoted and well orchestrated to deliver elements that exceed expectations and create an experience the guests have never witnessed, leaving them shocked. Our values include collaboration, openness, and collective achievement. We cherish your story as our own.
+              Across the various aspects, every resource and technical resource
+              is devoted and well orchestrated to deliver elements that exceed
+              expectations and create an experience the guests have never
+              witnessed, leaving them shocked. Our values include collaboration,
+              openness, and collective achievement. We cherish your story as our
+              own.
             </p>
           </div>
         </AnimatedSection>
