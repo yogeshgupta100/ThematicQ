@@ -33,14 +33,14 @@ export default function CTASection() {
 </li>
 
 
-<li> 
+{/* <li> 
     <Image
       src="/assets/static/Images/Homepage/logos/3.webp"
       width={500}
       height={500}
       alt="Picture of the author"
     />  
-</li>
+</li> */}
 
 <li> 
     <Image
@@ -51,23 +51,23 @@ export default function CTASection() {
     />  
 </li>
 
-<li> 
+{/* <li> 
     <Image
       src="/assets/static/Images/Homepage/logos/5.webp"
       width={500}
       height={500}
       alt="Picture of the author"
     />  
-</li>
+</li> */}
 
-<li> 
+{/* <li> 
     <Image
       src="/assets/static/Images/Homepage/logos/6.webp"
       width={500}
       height={500}
       alt="Picture of the author"
     />  
-</li>
+</li> */}
 
 
 
