@@ -24,7 +24,7 @@ export default async function AboutPage() {
       <CoreValues />
       <Philosophy />
       <OurStory />
-      <MeetTheTeam />
+      {/* <MeetTheTeam /> */}
     </main>
   );
 }
